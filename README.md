@@ -5,6 +5,23 @@ The Tron Chain Scanner website will offer:
 * An option to buy access to more search features by using the Tronlink wallet in Chrome on desktop.
 * A demo merchandise shop with Stripe integration to purchase merchandise articles using Stripe.
 
+## Table of contents
+
+* UX
+
+  * User Stories
+    * [Viewing and Navigation](#viewing-and-navigation)
+    * [Registration and Accounts](#registration-and-accounts)
+    * [Sorting and Searching](#sorting-and-searching)
+    * [Purchasing and Checkout](#purchasing-and-checkout)
+    * [Administration and Store Management](#administration-and-store-management)
+
+  * Wireframes / Mockups
+    * [Desktop](#desktop)
+    * [Mobile](#mobile)
+
+* [Database Structure](#database-structure)
+
 ## UX
 
 ### User Stories
@@ -102,3 +119,7 @@ The Tron Chain Scanner website will offer:
 * [Mobile Order Confirmation](https://f2808e0c-3673-4a0c-b45e-68df95511b78.ws-eu01.gitpod.io/mini-browser/workspace/tron_chain_scanner/static/wireframes/Mobile_Order_Confirmation.png)
 * [Mobile User Profile](https://f2808e0c-3673-4a0c-b45e-68df95511b78.ws-eu01.gitpod.io/mini-browser/workspace/tron_chain_scanner/static/wireframes/Mobile_User_Profile.png)
 * [Mobile User Addresses](https://f2808e0c-3673-4a0c-b45e-68df95511b78.ws-eu01.gitpod.io/mini-browser/workspace/tron_chain_scanner/static/wireframes/Mobile_User_Addresses.png)
+
+## Database Structure
+
+* [Database Diagram](https://dbdiagram.io/d/5fb6613e3a78976d7b7c95bd)
