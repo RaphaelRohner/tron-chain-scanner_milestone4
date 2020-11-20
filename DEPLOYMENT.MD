@@ -8,3 +8,5 @@
   - #4 Uploaded wireframes and added them to README file.
 
   - #5 Added DB model link to README file and started table of contents with anchor links.
+
+  - #6 Started project tron_chain_scanner, added to gitignore, ran first migration, added superuser and removed secret_key.
