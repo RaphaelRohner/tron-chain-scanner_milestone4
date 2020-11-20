@@ -10,3 +10,5 @@
   - #5 Added DB model link to README file and started table of contents with anchor links.
 
   - #6 Started project tron_chain_scanner, added to gitignore, ran first migration, added superuser and removed secret_key.
+
+  - #7 Installed Allauth, added authentication backends, apps, site ID and paths and migrated.
