@@ -71,15 +71,32 @@ TEMPLATES = [
     },
 ]
 
-AUTHENTICATION_BACKENDS = [    
+AUTHENTICATION_BACKENDS = [
     # Needed to login by username in Django admin, regardless of `allauth`
     'django.contrib.auth.backends.ModelBackend',
 
     # `allauth` specific authentication methods, such as login by e-mail
-    'allauth.account.auth_backends.AuthenticationBackend',    
+    'allauth.account.auth_backends.AuthenticationBackend',
 ]
 
 SITE_ID = 1
+
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+
+# Allow users to authenticate either by username or email:
+ACCOUNT_AUTHENTICATION_METHOD = 'username_email'
+# Email required to register for the site:
+ACCOUNT_EMAIL_REQUIRED = True
+# Click a link in the received email to verify:
+ACCOUNT_EMAIL_VERIFICATION = 'mandatory'
+# Type in the email address twice to avoid typos:
+ACCOUNT_SIGNUP_EMAIL_ENTER_TWICE = True
+# Minimum length of the username:
+ACCOUNT_USERNAME_MIN_LENGTH = 4
+# The URL to log into the page:
+LOGIN_URL = '/accounts/login/'
+# The URL where users land after login:
+LOGIN_REDIRECT_URL = '/'
 
 WSGI_APPLICATION = 'tron_chain_scanner.wsgi.application'
 
