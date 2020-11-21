@@ -17,3 +17,5 @@
 
 # 21-11-2020
   - #9 Added Allauth templates, created base.html from Bootstrap Starter template.
+
+  - #10 Base.html: Wrapped imports in blocks. Added header and message container.
