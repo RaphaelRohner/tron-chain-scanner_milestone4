@@ -27,3 +27,5 @@
   - #13 Added homepage content and header block to index.html.
 
   - #14 Fixed wireframe links in README file.
+
+  - #15 Added header to base.html.
