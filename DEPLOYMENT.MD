@@ -23,3 +23,5 @@
   - #11 Added Page Content placeholder blocks. Started Home App, created templates folder and index.html.
 
   - #12 Filled index.html with dummy, created Home view, connected Home And Main App via views.py, urls.py and settings.py.
+
+  - #13 Added homepage content and header block to index.html.
