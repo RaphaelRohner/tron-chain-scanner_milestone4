@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    # required Allauth apps
     'django.contrib.sites',
     'allauth',
     'allauth.account',
@@ -81,6 +82,7 @@ AUTHENTICATION_BACKENDS = [
 
 SITE_ID = 1
 
+# Allauth and Django email requirements
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 
 # Allow users to authenticate either by username or email:

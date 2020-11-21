@@ -14,3 +14,6 @@
   - #7 Installed Allauth, added authentication backends, apps, site ID and paths and migrated.
 
   - #8 Corrected path, defined email backends, changed login redirect and created Allauth templates folder.
+
+# 21-11-2020
+  - #9 Added Allauth templates, created base.html from Bootstrap Starter template.
