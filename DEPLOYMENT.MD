@@ -34,4 +34,8 @@
 
   - #17 Added base.css to folder static. Moved images from static to folder media. Styled homepage in base.css. Added static and media to settings.py and urls.py.
 
-  - #18 
+  - #18 Added navigation to base.html.
+
+  - #19 Added includes main-nav.html and mobile-top-header. Created navigation dropdowns in main-nav.html.
+
+  
