@@ -31,3 +31,5 @@
   - #15 Added header to base.html.
 
   - #16 Added account dropdown and shopping bag total to header and wrapped it in a row.
+
+  - #17 Added base.css to folder static. Moved images from static to folder media. Styled homepage in base.css. Added static and media to settings.py and urls.py.
