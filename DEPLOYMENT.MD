@@ -20,4 +20,6 @@
 
   - #10 Base.html: Wrapped imports in blocks. Added header and message container.
 
-  - #11 Added Page Content placeholder blocks, 
+  - #11 Added Page Content placeholder blocks. Started Home App, created templates folder and index.html.
+
+  - #12 Filled index.html with dummy, created Home view, connected Home And Main App via views.py, urls.py and settings.py.
