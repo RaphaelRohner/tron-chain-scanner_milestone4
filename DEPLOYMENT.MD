@@ -38,5 +38,7 @@
 
   - #19 Added includes main-nav.html and mobile-top-header. Created navigation dropdowns in main-nav.html.
 
-  - #20 
+  - #20 Created header for mobile views in mobile-top-header.html.
+
+  - #21 Added css class for banner.
 
