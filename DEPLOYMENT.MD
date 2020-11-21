@@ -29,3 +29,5 @@
   - #14 Fixed wireframe links in README file.
 
   - #15 Added header to base.html.
+
+  - #16 Added account dropdown and shopping bag total to header and wrapped it in a row.
