@@ -25,3 +25,5 @@
   - #12 Filled index.html with dummy, created Home view, connected Home And Main App via views.py, urls.py and settings.py.
 
   - #13 Added homepage content and header block to index.html.
+
+  - #14 Fixed wireframe links in README file.
