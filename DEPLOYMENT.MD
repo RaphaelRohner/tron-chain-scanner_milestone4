@@ -64,3 +64,5 @@
 
   - #30 Created Heroku App. Installed Postgres, Dj-Database, PsycoPG2 and updated requirements.txt.
 
+  - #31 
+
