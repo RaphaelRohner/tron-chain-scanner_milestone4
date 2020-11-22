@@ -49,3 +49,7 @@
   - #22 Added App products, uploaded fixtures and added app to settings.py.
 
   - #23 Added category and product models to products/models.py. Installed Pillow and made migrations.
+
+  - #24 Registered product model in admin.py.
+
+  - #25 
