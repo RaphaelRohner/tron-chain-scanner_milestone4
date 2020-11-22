@@ -56,5 +56,7 @@
 
   - #26 Added meta class verbose to models.py. Reordered fields in admin by adding categories and product class to admin.py and registering them.
 
-  - #27 Added general products view to views.py. Created products/urls.py. Registered path in main urls.py.
+  - #27 Added general products view to views.py. Created products/urls.py. Registered path in main urls.py. Created products.html.
+
+  - #28 Added overlay to products.html. Added class overlay to base.css. Added content block to display products responsive with horizontal rule depending on number of products per row.
 
