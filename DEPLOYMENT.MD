@@ -54,5 +54,7 @@
 
   - #25 Imported categories fixture, removed typo in products fixture and imported it. Checked model in /admin.
 
-  - #26 Added meta class verbose to models.py. Reordered fields in admin by adding categories and product class to admin.py.
+  - #26 Added meta class verbose to models.py. Reordered fields in admin by adding categories and product class to admin.py and registering them.
+
+  - #27 Added general products view to views.py. Created products/urls.py. Registered path in main urls.py.
 
