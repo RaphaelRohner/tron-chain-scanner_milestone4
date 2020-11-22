@@ -60,3 +60,7 @@
 
   - #28 Added overlay to products.html. Added class overlay to base.css. Added content block to display products responsive with horizontal rule depending on number of products per row.
 
+  - #29 Linked navigation Merch > All Products to products.html.
+
+  
+
