@@ -62,5 +62,5 @@
 
   - #29 Linked navigation Merch > All Products to products.html.
 
-  
+  - #30 Created Heroku App. Installed Postgres, Dj-Database, PsycoPG2 and updated requirements.txt.
 
