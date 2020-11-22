@@ -52,4 +52,6 @@
 
   - #24 Registered product model in admin.py.
 
-  - #25 
+  - #25 Imported categories fixture, removed typo in products fixture and imported it. Checked model in /admin."
+
+  
