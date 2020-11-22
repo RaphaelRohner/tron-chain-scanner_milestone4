@@ -52,6 +52,7 @@
 
   - #24 Registered product model in admin.py.
 
-  - #25 Imported categories fixture, removed typo in products fixture and imported it. Checked model in /admin."
+  - #25 Imported categories fixture, removed typo in products fixture and imported it. Checked model in /admin.
 
-  
+  - #26 Added meta class verbose to models.py. Reordered fields in admin by adding categories and product class to admin.py.
+
