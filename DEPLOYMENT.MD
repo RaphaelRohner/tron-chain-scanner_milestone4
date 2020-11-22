@@ -66,5 +66,7 @@
 
   - #31 Connected database to Heroku.
 
-  - #32 Set database source depending on environment in settings.py. 
+  - #32 Set database source depending on environment in settings.py. Installed Gunicorn and updated requirements.txt.
+
+  - #33 Created Procfile, disabled static file collection, allowed Heroku host
 
