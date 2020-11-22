@@ -70,5 +70,7 @@
 
   - #33 Created Procfile, disabled static file collection, allowed Heroku host.
 
-  - #34 
+  - #34 Fixed Procfile.
+
+  - #35 Deployed to Heroku and added secret key and changed debug mode.
 
