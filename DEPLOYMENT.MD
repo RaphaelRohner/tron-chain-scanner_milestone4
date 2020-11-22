@@ -64,5 +64,7 @@
 
   - #30 Created Heroku App. Installed Postgres, Dj-Database, PsycoPG2 and updated requirements.txt.
 
-  - #31 
+  - #31 Connected database to Heroku.
+
+  - #32 Set database source depending on environment in settings.py. 
 
