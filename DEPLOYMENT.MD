@@ -1,4 +1,5 @@
 # 20/11/2020
+
   - #1 Installed Django and started README file.
 
   - #2 Added user stories to README file.
@@ -15,7 +16,8 @@
 
   - #8 Corrected path, defined email backends, changed login redirect and created Allauth templates folder.
 
-# 21-11-2020
+# 21/11/2020
+
   - #9 Added Allauth templates, created base.html from Bootstrap Starter template.
 
   - #10 Base.html: Wrapped imports in blocks. Added header and message container.
@@ -42,3 +44,6 @@
 
   - #21 Added css class for banner.
 
+# 22/11/2020
+
+  - #22 Added App products, uploaded fixtures and added app to settings.py.
