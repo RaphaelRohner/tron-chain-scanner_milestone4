@@ -47,3 +47,5 @@
 # 22/11/2020
 
   - #22 Added App products, uploaded fixtures and added app to settings.py.
+
+  - #23 Added category and product models to products/models.py. Installed Pillow and made migrations.
