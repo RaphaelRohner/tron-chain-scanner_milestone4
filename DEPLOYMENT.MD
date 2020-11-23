@@ -83,3 +83,7 @@
   - #38 Fixed bucket name.
 
   - #39 Added cache control to settings.py.
+
+  - #40 Changed background image and checked Heroku and AWS deployment.
+
+  - #41 Created product detail view, added URL pattern and created product_detail.html.
