@@ -87,3 +87,7 @@
   - #40 Changed background image and checked Heroku and AWS deployment.
 
   - #41 Created product detail view, added URL pattern and created product_detail.html.
+
+  - #42 Linked to product details and added some top padding for mobile view.
+
+  
