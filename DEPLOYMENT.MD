@@ -77,3 +77,5 @@
  # 23/11/2020
 
   - #36 Created AWS bucket and user. Installed Boto3 and Django-Storages. Updated requirements.txt.
+
+  - #37 Added AWS keys to Heroku. Added AWS to settings.py and created custom_storages.py.
