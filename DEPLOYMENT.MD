@@ -74,3 +74,6 @@
 
   - #35 Deployed to Heroku and added secret key and changed debug mode.
 
+ # 23/11/2020
+
+  - #36 Created AWS bucket and user. Installed Boto3 and Django-Storages. Updated requirements.txt.
