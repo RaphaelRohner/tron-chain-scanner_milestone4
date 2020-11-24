@@ -103,3 +103,5 @@
    - #47 Added product category to product.html.
 
    - #48 Added product category to product_detail.html.
+
+   - #49 
