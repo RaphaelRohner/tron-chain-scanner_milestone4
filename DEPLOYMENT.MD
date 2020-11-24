@@ -95,3 +95,5 @@
    - #43 Added search functionality to products > views.py, base.html and mobile-top-header.html.
 
    - #44 Added clothing categories to main-nav.html. In products > views.py added category filtering to all_products view.
+
+   - #45 Added homeware and offer categories to main-nav.html. Changed category jeans to caps.
