@@ -107,3 +107,5 @@
    - #49 Added category display under headline.
 
    - #50 Added category styling to base.css. Fixed html indentation in products.html.
+
+   - #51 Added sort options to products.html and views.py.
