@@ -90,4 +90,8 @@
 
   - #42 Linked to product details and added some top padding for mobile view.
 
-  
+ # 24/11/2020
+
+   - #43 Added search functionality to products > views.py, base.html and mobile-top-header.html.
+
+   
