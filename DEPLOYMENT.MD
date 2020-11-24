@@ -104,4 +104,6 @@
 
    - #48 Added product category to product_detail.html.
 
-   - #49 
+   - #49 Added category display under headline.
+
+   - #50 Added category styling to base.css. Fixed html indentation in products.html.
