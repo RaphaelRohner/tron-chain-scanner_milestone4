@@ -119,3 +119,7 @@
   - #54 Created bag app, app view in bag > views.py and basic bag.html.
 
   - #55 Created urls.py, added path to project > urls.py, added hrefs for bag to base.html and mobile-top-header.html. Added basic bag html structure.
+
+  - #56 Created contexts.py to bag app.
+
+  
