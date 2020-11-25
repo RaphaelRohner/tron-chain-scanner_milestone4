@@ -109,3 +109,7 @@
    - #50 Added category styling to base.css. Fixed html indentation in products.html.
 
    - #51 Added sort options to products.html and views.py.
+
+# 25/11/2020
+
+  - #52 Added sort function to products.html.
