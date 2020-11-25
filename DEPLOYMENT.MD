@@ -129,3 +129,5 @@
   - #59 Added add to bag view to bag > views.py and added url pattern to urls.py.
 
   - #60 Added function to add up added products to bag > contexts.py.
+
+  - #61 Added list of items in shopping bag to bag.html.
