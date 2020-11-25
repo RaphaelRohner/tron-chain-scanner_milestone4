@@ -127,3 +127,5 @@
   - #58 Added form to purchase product to product_detail.html. Added reverse style css classes for buttons to base.css.
 
   - #59 Added add to bag view to bag > views.py and added url pattern to urls.py.
+
+  - #60 Added function to add up added products to bag > contexts.py.
