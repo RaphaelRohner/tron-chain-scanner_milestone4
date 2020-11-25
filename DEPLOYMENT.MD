@@ -117,3 +117,5 @@
   - #53 Added back to top button to products.html and styled it in base.css.
 
   - #54 Created bag app, app view in bag > views.py and basic bag.html.
+
+  - #55 Created urls.py, added path to project > urls.py, added hrefs for bag to base.html and mobile-top-header.html. Added basic bag html structure.
