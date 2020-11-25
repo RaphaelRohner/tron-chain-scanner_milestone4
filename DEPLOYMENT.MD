@@ -115,3 +115,5 @@
   - #52 Added sort function to products.html.
 
   - #53 Added back to top button to products.html and styled it in base.css.
+
+  - #54 Created bag app, app view in bag > views.py and basic bag.html.
