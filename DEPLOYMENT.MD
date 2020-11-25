@@ -122,4 +122,4 @@
 
   - #56 Created contexts.py to bag app.
 
-  
+  - #57 Added the free delivery context processor to settings.py.
