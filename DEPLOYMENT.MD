@@ -123,3 +123,5 @@
   - #56 Created contexts.py to bag app.
 
   - #57 Added the free delivery context processor to settings.py.
+
+  - #58 Added form to purchase product to product_detail.html. Added reverse style css classes for buttons to base.css.
