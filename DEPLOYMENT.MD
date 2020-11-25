@@ -113,3 +113,5 @@
 # 25/11/2020
 
   - #52 Added sort function to products.html.
+
+  - #53 Added back to top button to products.html and styled it in base.css.
