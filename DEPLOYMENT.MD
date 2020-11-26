@@ -139,3 +139,5 @@
   - #63 Updated products with or without sizes in admin console.
 
   - #64 Added size logic to bag > contexts.py and views.py, changed product categories for two items in admin console.
+
+  - #65 Added javaScript functionality to change product purchase amount.
