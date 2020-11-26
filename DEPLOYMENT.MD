@@ -141,3 +141,5 @@
   - #64 Added size logic to bag > contexts.py and views.py, changed product categories for two items in admin console.
 
   - #65 Added javaScript functionality to change product purchase amount.
+
+  - #66 Limited product amount between 1 and 99 in quantity_input_script.html.
