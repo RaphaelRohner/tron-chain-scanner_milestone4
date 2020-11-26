@@ -131,3 +131,9 @@
   - #60 Added function to add up added products to bag > contexts.py.
 
   - #61 Added list of items in shopping bag to bag.html.
+
+# 26/11/2020
+
+  - #62 Added sizes to product model and size selector box to product template.
+
+  - #63 Updated products with or without sizes in admin console.
