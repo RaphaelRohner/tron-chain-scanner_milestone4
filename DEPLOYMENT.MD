@@ -143,3 +143,5 @@
   - #65 Added javaScript functionality to change product purchase amount.
 
   - #66 Limited product amount between 1 and 99 in quantity_input_script.html.
+
+  - #67 Added quantity change to shopping bag.
