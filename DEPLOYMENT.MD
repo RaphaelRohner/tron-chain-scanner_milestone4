@@ -137,3 +137,5 @@
   - #62 Added sizes to product model and size selector box to product template.
 
   - #63 Updated products with or without sizes in admin console.
+
+  - #64 Added size logic to bag > contexts.py and views.py, changed product categories for two items in admin console.
