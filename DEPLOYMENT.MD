@@ -164,4 +164,6 @@
 
   - #75 Created toast_error.html, toast_info.html and toast_warning.html. Added error, info and warning messages to html files.
 
-  - #76 Included toast messages to base.html messages container and poastloadjs block. Added success message to views.py and message_storage to settings.py. 
+  - #76 Included toast messages to base.html messages container and poastloadjs block. Added success message to views.py and message_storage to settings.py.
+
+  - #77 Styled toasts in base.css. Added if, elif, else statement to message block to display different toasts by status.
