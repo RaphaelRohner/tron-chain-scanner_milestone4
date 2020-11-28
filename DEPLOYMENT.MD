@@ -183,3 +183,5 @@
   - #84 Defined fields for the Admin menu that can be edited or a muted in checkout > admin.py.
 
   - #85 Created signals.py with functions to update and delete order total. Imported checkout signals to apps.py.
+
+  - #86 Created forms.py and a class with function to set placeholders for form fields by iterating through them.
