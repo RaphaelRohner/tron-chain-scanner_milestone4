@@ -167,3 +167,7 @@
   - #76 Included toast messages to base.html messages container and poastloadjs block. Added success message to views.py and message_storage to settings.py.
 
   - #77 Styled toasts in base.css. Added if, elif, else statement to message block to display different toasts by status.
+
+  - #78 Added toast messages for all add, update and remove cases to views.py.
+
+  
