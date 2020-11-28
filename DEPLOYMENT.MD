@@ -145,3 +145,13 @@
   - #66 Limited product amount between 1 and 99 in quantity_input_script.html.
 
   - #67 Added quantity change to shopping bag.
+
+  - #68 Added change quantity button functionality to bag.html.
+
+  - #69 Added update and remove buttons to products in shopping bag and changed mouse pointer.
+
+# 28-11-2020
+
+  - #70 Added view to change product quantity in bag > views.py, path tobag > urls.py and action to bag.html.
+
+  - #71 
