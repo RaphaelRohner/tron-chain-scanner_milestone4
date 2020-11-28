@@ -180,4 +180,4 @@
 
   - #83 Made migrations for order model.
 
-  
+  - #84 Defined fields for the Admin menu that can be edited or a muted in checkout > admin.py.
