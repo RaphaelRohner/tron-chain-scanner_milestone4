@@ -173,3 +173,5 @@
   - #79 Added arrow and a arrow colors for toast messages to base.css.
 
   - #80 Added shopping bag preview to toast_success.html.
+
+  - #81 Created checkout App and registered it in settings.py. Added models Order and OrderLineItem to models.py.
