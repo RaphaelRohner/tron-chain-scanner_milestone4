@@ -161,3 +161,5 @@
   - #73 Created bag_tools.py and __init__.py in folder templatetags. Added view to calculate subtotal and added it to bag.html.
 
   - #74 Created toasts folder in main templates folder. Added toast_success.html and added success message.
+
+  - #75 Created toast_error.html, toast_info.html and toast_warning.html. Added error, info and warning messages to html files.
