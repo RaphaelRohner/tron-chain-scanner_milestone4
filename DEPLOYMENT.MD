@@ -157,3 +157,5 @@
   - #71 Added view to remove product from bag in bag > views.py and path to bag > urls.py.
 
   - #72 Changed variable size and data in bag.html to contain product_size. Updated remove link in bag.html. Replaced JQuery slim with JQuery min in base.html.
+
+  - #73 Created bag_tools.py and __init__py in folder templatetags. Added view to calculate subtotal and added it to bag.html.
