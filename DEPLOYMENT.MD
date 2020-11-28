@@ -163,3 +163,5 @@
   - #74 Created toasts folder in main templates folder. Added toast_success.html and added success message.
 
   - #75 Created toast_error.html, toast_info.html and toast_warning.html. Added error, info and warning messages to html files.
+
+  - #76 Included toast messages to base.html messages container and poastloadjs block. Added success message to views.py and message_storage to settings.py. 
