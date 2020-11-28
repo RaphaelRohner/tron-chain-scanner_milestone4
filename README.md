@@ -123,3 +123,8 @@ The Tron Chain Scanner website will offer:
 ## Database Structure
 
 * [Database Diagram](https://dbdiagram.io/d/5fb6613e3a78976d7b7c95bd)
+
+## Hard or impossible to solve
+
+* Removing Python error messages for line length using linebreaks created with ' ' for the toast messages returned the variable names instead of their content.
+  * Using \ instead solved the issue

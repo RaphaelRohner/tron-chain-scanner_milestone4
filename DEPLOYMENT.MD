@@ -170,4 +170,4 @@
 
   - #78 Added toast messages for all add, update and remove cases to views.py.
 
-  
+  - #79 Added arrow and a arrow colors for toast messages to base.css.
