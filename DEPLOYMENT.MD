@@ -152,6 +152,8 @@
 
 # 28-11-2020
 
-  - #70 Added view to change product quantity in bag > views.py, path tobag > urls.py and action to bag.html.
+  - #70 Added view to change product quantity in bag > views.py, path to bag > urls.py and action to bag.html.
 
-  - #71 
+  - #71 Added view to remove product from bag in bag > views.py and path to bag > urls.py.
+
+  - #72 Changed variable size and data in bag.html to contain product_size. Updated remove link in bag.html. Replaced JQuery slim with JQuery min in base.html.
