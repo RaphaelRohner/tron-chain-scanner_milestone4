@@ -177,3 +177,7 @@
   - #81 Created checkout App and registered it in settings.py. Added models Order and OrderLineItem to models.py.
 
   - #82 Created model methods to create order number, update total, rewrite and return order number. Created methods to set lineitemtotal and order total and return SKU and order number.
+
+  - #83 Made migrations for order model.
+
+  
