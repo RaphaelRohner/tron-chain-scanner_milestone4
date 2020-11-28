@@ -185,3 +185,5 @@
   - #85 Created signals.py with functions to update and delete order total. Imported checkout signals to apps.py.
 
   - #86 Created forms.py and a class with function to set placeholders for form fields by iterating through them.
+
+  - #87 Created checkout view and urls.py with path. Added url pattern to main App. Added checkout html and css structure. Installed Crispy Forms and added it to settings.py. Updated requirements.
