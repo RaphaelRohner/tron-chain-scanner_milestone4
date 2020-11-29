@@ -245,3 +245,5 @@
   - #114 Changed country field in checkout.html to drop-down, styled the field and removed placeholder.
 
   - #115 Created profiles app and profiles model. Added user profile to checkout. Made migrations.
+
+  - #116 Created basic profile view, added it to urls.py. Added view to main app. Created basic profile template and CSS style.
