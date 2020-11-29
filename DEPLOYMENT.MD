@@ -211,3 +211,5 @@
   - #97 Added post method to checkout view in checkout > views.py.
 
   - #98 Added view for successfull orders and imported dependencies.
+
+  - #99 Added path for checkout success. Added checkout app to __init__.py. Added option for 0 line orders. Added checkout_success.html template.
