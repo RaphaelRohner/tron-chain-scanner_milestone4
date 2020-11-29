@@ -20,9 +20,9 @@ def checkout(request):
     stripe_secret_key = settings.STRIPE_SECRET_KEY
 
     if request.method == 'POST':
-    """
-    BLOCK TO CREATE THE VARIABLES TO POST WHEN SUBMITTING THE FORM
-    """
+        """
+        BLOCK TO CREATE THE VARIABLES TO POST WHEN SUBMITTING THE FORM
+        """
         bag = request.session.get('bag', {})
 
         form_data = {
