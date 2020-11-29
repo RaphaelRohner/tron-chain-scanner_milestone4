@@ -201,3 +201,7 @@
   - #92 Added CSS formatting for Stripe field to checkout.css.
 
   - #93 Added event listener to handle errors during card entry to checkout > stripe_elements_js.
+
+  - #94 Added payment intent to views.py.
+
+  - #95 Added event listener to handle form submits to checkout > stripe_elements.js.
