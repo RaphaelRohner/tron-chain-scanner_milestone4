@@ -197,3 +197,5 @@
   - #90 Added css styles for Stripe credit card field to checkout > checkout.css. Added Stripe JS import to base.html.
 
   - #91 Installed Stripe. Defined ENV variables in settings.py. Updated requirements. Added JS logic to stripe_elements.js. Added Stripe JS import to checkout.html and views.py.
+
+  - #92 Added CSS formatting for Stripe field to checkout.css.
