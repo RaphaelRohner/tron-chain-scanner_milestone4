@@ -215,3 +215,5 @@
   - #99 Added path for checkout success. Added checkout app to __init__.py. Added option for 0 line orders. Added checkout_success.html template.
 
   - #100 Added class to overwrite save methods in checkout > models.py. Fixed signals.py name and fixed indentation error in views.py. Checked functionality on site, in admin and on Stripe.
+
+  - #101 Added order summary to order_success.html, displaying available information.
