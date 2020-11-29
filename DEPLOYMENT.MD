@@ -191,3 +191,7 @@
   - #88 Created checkout.html with item overview, form to enter details and buttons.
 
   - #89 Added context processor to settings.py and added link to button to secure checkout.
+
+# 29/11/2020
+
+  - #90 Added css styles for Stripecard fieldto checkout > checkout.css. Added StripeJS import to base.html.
