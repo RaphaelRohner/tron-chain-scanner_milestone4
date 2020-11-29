@@ -205,3 +205,5 @@
   - #94 Added payment intent to views.py.
 
   - #95 Added event listener to handle form submits to checkout > stripe_elements.js.
+
+  - #96 Fixed variable namesfor Stripepayments, uncommented some imports. Tested payment and checked it on Stripe's side.
