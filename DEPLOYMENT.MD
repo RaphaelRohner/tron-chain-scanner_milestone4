@@ -227,3 +227,5 @@
   - #105 Added webhooks.py listening for messages from Stripe. Tested webhook functionality.
 
   - #106 Added webhook handlers for payment intent succeed and failed. Tested functionality.
+
+  - #107
