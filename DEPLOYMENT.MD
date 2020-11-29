@@ -219,3 +219,5 @@
   - #101 Added order summary to order_success.html, displaying available information.
 
   - #102 Added loading spinner to checkout.html, styled it in checkout.css and added it submit event listener. Checked 3D Secure payment.
+
+  - #103 Added webhook_handler.py to checkout app.
