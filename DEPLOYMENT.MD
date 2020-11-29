@@ -234,4 +234,6 @@
 
   - #109 Added path for checkout. Added post and fail functionality to Stripe payment in stripe_elements.js.
 
-  - #110 
+  - #110 Added functionality to check if order already exists and delay in order to prevent multiple submissions in webhook_handler.py. Made migrations.
+
+  - #111 Added hidden field, variables for original bag and dependencies to check for duplicate order.
