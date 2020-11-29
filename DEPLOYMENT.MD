@@ -241,3 +241,5 @@
   - #112 Fixed webhook secret key and checked functionality.
 
   - #113 Re-ordered input fields in checkout.html, changed county placeholder, installed django-countries and updated requirements.
+
+  - #114 Changed country field in checkout.html to drop-down, styled the field and removed placeholder.
