@@ -237,3 +237,5 @@
   - #110 Added functionality to check if order already exists and delay in order to prevent multiple submissions in webhook_handler.py. Made migrations.
 
   - #111 Added hidden field, variables for original bag and dependencies to check for duplicate order.
+
+  - #112 Fixed webhook secret key and checked functionality.
