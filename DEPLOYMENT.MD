@@ -199,3 +199,5 @@
   - #91 Installed Stripe. Defined ENV variables in settings.py. Updated requirements. Added JS logic to stripe_elements.js. Added Stripe JS import to checkout.html and views.py.
 
   - #92 Added CSS formatting for Stripe field to checkout.css.
+
+  - #93 Added event listener to handle errors during card entry to checkout > stripe_elements_js.
