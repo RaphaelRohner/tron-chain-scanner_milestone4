@@ -209,3 +209,5 @@
   - #96 Fixed variable namesfor Stripepayments, uncommented some imports. Tested payment and checked it on Stripe's side.
 
   - #97 Added post method to checkout view in checkout > views.py.
+
+  - #98 Added view for successfull orders and imported dependencies.
