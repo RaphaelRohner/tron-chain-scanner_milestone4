@@ -222,4 +222,6 @@
 
   - #103 Added webhook_handler.py to checkout app.
 
-  - #104 
+  - #104 Added handlers for successfull and failed payments to webhook_handler.py. Added path and dependencies to urls.py.
+
+  - #105 Added webhooks.py listening for messages from Stripe.
