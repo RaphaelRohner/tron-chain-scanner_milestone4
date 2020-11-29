@@ -239,3 +239,5 @@
   - #111 Added hidden field, variables for original bag and dependencies to check for duplicate order.
 
   - #112 Fixed webhook secret key and checked functionality.
+
+  - #113 Re-ordered input fields in checkout.html, changed county placeholder, installed django-countries and updated requirements.
