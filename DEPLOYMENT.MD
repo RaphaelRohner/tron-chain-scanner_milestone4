@@ -231,3 +231,5 @@
   - #107 Added billing and shipping details to send to Stripe to stripe_elements.js.
 
   - #108 Added view to checkout > views.py to check if the save information checkbox is checked.
+
+  - #109 Added path for checkout. Added post and fail functionality to Stripe payment in stripe_elements.js.
