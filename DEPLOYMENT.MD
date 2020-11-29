@@ -224,4 +224,6 @@
 
   - #104 Added handlers for successfull and failed payments to webhook_handler.py. Added path and dependencies to urls.py.
 
-  - #105 Added webhooks.py listening for messages from Stripe.
+  - #105 Added webhooks.py listening for messages from Stripe. Tested webhook functionality.
+
+  - #106 Added webhook handlers for payment intent succeed and failed. Tested functionality.
