@@ -251,3 +251,5 @@
 # 30/11/2020
 
   - #117 Adjusted Allauth account templates to site style.
+
+  - #118 Styled Allauth templates in base.css.
