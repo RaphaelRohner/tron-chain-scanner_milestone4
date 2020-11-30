@@ -247,3 +247,7 @@
   - #115 Created profiles app and profiles model. Added user profile to checkout. Made migrations.
 
   - #116 Created basic profile view, added it to urls.py. Added view to main app. Created basic profile template and CSS style.
+
+# 30/11/2020
+
+  - #117 Adjusted Allauth account templates to site style.
