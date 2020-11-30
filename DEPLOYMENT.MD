@@ -253,3 +253,5 @@
   - #117 Adjusted Allauth account templates to site style.
 
   - #118 Styled Allauth templates in base.css.
+
+  - #119 Tested user registration. Added settings to profile view and linked profiles from base.html and profile.html.
