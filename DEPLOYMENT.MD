@@ -255,3 +255,5 @@
   - #118 Styled Allauth templates in base.css.
 
   - #119 Tested user registration. Added settings to profile view and linked profiles from base.html and profile.html.
+
+  - #120 Added profiles > forms.py function for placeholders.
