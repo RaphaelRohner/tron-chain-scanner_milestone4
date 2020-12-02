@@ -267,3 +267,5 @@
   - #123 Added post handler for profile update and adjusted toast success message.
 
   - #124 Added order history to profile.html.
+
+  - #125 Styled order history with CSS, added order history view, added path.
