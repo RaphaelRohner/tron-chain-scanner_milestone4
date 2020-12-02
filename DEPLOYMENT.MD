@@ -269,3 +269,5 @@
   - #124 Added order history to profile.html.
 
   - #125 Styled order history with CSS, added order history view, added path.
+
+  - #126 Added button to checkout success displaying depending if user has a profile. Added order history to checkout success.
