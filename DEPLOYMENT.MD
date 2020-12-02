@@ -262,4 +262,6 @@
 
 # 02/12/2020
 
-  - #122 
+  - #122 Added CSS and JS to style the country drop-down, added postload JS block.
+
+  - #123 Added post handler for profile update and adjusted toast success message.
