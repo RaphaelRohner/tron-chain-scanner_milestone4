@@ -259,3 +259,7 @@
   - #120 Added profiles > forms.py function for placeholders.
 
   - #121 Added form to views.py, profile.html and styled the form elements in profile.css.
+
+# 02/12/2020
+
+  - #122 
