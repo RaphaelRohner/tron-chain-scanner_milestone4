@@ -287,3 +287,5 @@
   - #132 Added add products view and path.
 
   - #133 Added add products page.
+
+  - #134 Fixed adding products without image.
