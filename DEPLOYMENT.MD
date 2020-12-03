@@ -279,3 +279,5 @@
   - #128 Added save user data functionality to webhook_handler.
 
   - #129 Added confirmation email subject and body.
+
+  - #130 Added functionality to send confirmation email.
