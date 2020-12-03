@@ -295,3 +295,5 @@
   - #136 Added edit products view.
 
   - #138 Added paths for edit and delete. Added delete product view.
+
+  - #139 Added edit and delete options to products and product details.
