@@ -273,3 +273,7 @@
   - #126 Added button to checkout success displaying depending if user has a profile. Added order history to checkout success.
 
   - #127 Added autofill to checkout form.
+
+# 03/12/2020
+
+  - #128 Added save user data functionality to webhook_handler.
