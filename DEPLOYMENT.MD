@@ -285,3 +285,5 @@
   - #131 Added forms.py to products to create form to add products.
 
   - #132 Added add products view and path.
+
+  - #133 Added add products page.
