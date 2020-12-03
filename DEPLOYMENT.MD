@@ -299,3 +299,5 @@
   - #139 Added edit and delete options to products and product details.
 
   - #140 Restricted add, edit and delete to superuser.
+
+  - #141 Added Django image widget for edit product view.
