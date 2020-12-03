@@ -277,3 +277,5 @@
 # 03/12/2020
 
   - #128 Added save user data functionality to webhook_handler.
+
+  - #129 Added confirmation email subject and body.
