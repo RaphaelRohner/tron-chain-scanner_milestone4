@@ -281,3 +281,5 @@
   - #129 Added confirmation email subject and body.
 
   - #130 Added functionality to send confirmation email.
+
+  - #131 Added forms.py to products to create form to add products.
