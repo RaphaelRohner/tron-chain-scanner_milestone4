@@ -290,4 +290,6 @@
 
   - #134 Fixed adding products without image.
 
-  - #135 
+  - #135 Added edit product page.
+
+  - #136 Added edit products view.
