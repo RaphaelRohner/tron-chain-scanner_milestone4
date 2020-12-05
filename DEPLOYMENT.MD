@@ -301,3 +301,8 @@
   - #140 Restricted add, edit and delete to superuser.
 
   - #141 Added Django image widget for edit product view.
+
+# 05/12/2020
+
+  - #142 Styled product form in base.css. Wrapped the crispy form in a for loop to iterate through the fields in add and edit.html.
+
