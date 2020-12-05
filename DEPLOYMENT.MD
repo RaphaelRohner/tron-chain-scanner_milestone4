@@ -314,3 +314,5 @@
 
   - #144 Updated requirements.txt. Added Stripe keys to Heroku app. Added Stripe webhook for Heroku app.
 
+  - #145 Setup email depending on environment with chibitalesorg@gmail.com.
+
