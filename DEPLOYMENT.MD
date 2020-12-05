@@ -306,3 +306,11 @@
 
   - #142 Styled product form in base.css. Wrapped the crispy form in a for loop to iterate through the fields in add and edit.html.
 
+  - #143 Added success message for changes to add and edit.html and tested functionality.
+    - Tested adding, editing and deleting product as admin.
+    - Tested messages.
+    - Tested adding and removing product image.
+    - Tested blocked availabilty of these functions as not admin.
+
+  
+
