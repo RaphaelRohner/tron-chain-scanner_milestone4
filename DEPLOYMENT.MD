@@ -312,5 +312,5 @@
     - Tested adding and removing product image.
     - Tested blocked availabilty of these functions as not admin.
 
-  
+  - #144 Updated requirements.txt. Added Stripe keys to Heroku app. Added Stripe webhook for Heroku app.
 
