@@ -337,3 +337,5 @@
   - #153 Split Shopping Bag content into html files. Added mobile only element giving summary at the top. Added jump to top button.
 
   - #154 Started removing unused files and imports, splitting lines > 79 where possible and ignoring the rest, ignoring no member message.
+
+  - #155 Corrected Typo in bag-total.html.
