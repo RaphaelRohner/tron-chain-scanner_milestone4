@@ -327,3 +327,7 @@
   - #149 Removed default email duplette from settings.py.
 
   - #150 Checked registration process with Heropku app, worked. Emptied Heroku DB, remigrated, added Superuser.
+
+    - After submit in Heroku App: Tested Registration, login and order process and emails including confirmation.
+
+  - #151 Checked Heroku App functionality. Styled mobile view for login and register page.
