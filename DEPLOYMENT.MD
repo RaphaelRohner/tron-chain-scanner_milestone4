@@ -323,3 +323,5 @@
   - #147 Resubmit Heroku deployment to fix login in Heroku App.
 
   - #148 Try removed line break to fix login issue.
+
+  - #149 Removed default email duplette from settings.py.
