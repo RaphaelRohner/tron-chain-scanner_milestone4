@@ -331,3 +331,5 @@
     - After submit in Heroku App: Tested Registration, login and order process and emails including confirmation.
 
   - #151 Checked Heroku App functionality. Styled mobile view for login and register page.
+
+  - #152 
