@@ -319,3 +319,5 @@
 # 06/12/2020
 
   - #146 Resubmitted migrations and HEroku DB connection. Try to fix Heroku App Server Error 500.
+
+  - #147 Resubmit Heroku deployment to fix login in Heroku App. 
