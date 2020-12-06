@@ -332,4 +332,6 @@
 
   - #151 Checked Heroku App functionality. Styled mobile view for login and register page.
 
-  - #152 
+  - #152 Added links to homepage to main nav and mobileheader.
+
+  - #153 Split Shopping Bag content into html files. Added mobile only element giving summary at the top. Added jump to top button.
