@@ -51,9 +51,9 @@ class Order(models.Model):
         UPDATE GRAND TOTAL EACH TIME A LINE ITEM IS ADDED,
         ACCOUNTING FOR DELIVERY COST.
         """
-        self.order_total = self.lineitems.aggregate(Sum('lineitem_total'))['lineitem_total__sum'] or 0
+        self.order_total = self.lineitems.aggregate(Sum('lineitem_total'))['lineitem_total__sum'] or 0  # noqa: E501, pylint: disable=maybe-no-member
         if self.order_total < settings.FREE_DELIVERY_THRESHOLD:
-            self.delivery_cost = self.order_total * settings.STANDARD_DELIVERY_PERCENTAGE / 100
+            self.delivery_cost = self.order_total * settings.STANDARD_DELIVERY_PERCENTAGE / 100  # noqa: E501
         else:
             self.delivery_cost = 0
         self.grand_total = self.order_total + self.delivery_cost
@@ -92,8 +92,8 @@ class OrderLineItem(models.Model):
         OVERRIDE ORIGINAL SAVE METHOD TO SET LINEITEM TOTAL
         AND UPDATE ORDER TOTAL.
         """
-        self.lineitem_total = self.product.price * self.quantity
+        self.lineitem_total = self.product.price * self.quantity  # noqa: E501, pylint: disable=maybe-no-member
         super().save(*args, **kwargs)
 
     def __str__(self):
-        return f'SKU {self.product.sku} on order {self.order.order_number}'
+        return f'SKU {self.product.sku} on order {self.order.order_number}'  # noqa: E501, pylint: disable=maybe-no-member

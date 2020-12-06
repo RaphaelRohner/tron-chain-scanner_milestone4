@@ -36,7 +36,7 @@ def all_products(request):
         if 'category' in request.GET:
             categories = request.GET['category'].split(',')
             products = products.filter(category__name__in=categories)
-            categories = Category.objects.filter(name__in=categories)  # pylint: disable=maybe-no-member
+            categories = Category.objects.filter(name__in=categories)  # noqa: E501, pylint: disable=maybe-no-member
 
         if 'q' in request.GET:
             query = request.GET['q']
@@ -87,7 +87,7 @@ def add_product(request):
             messages.success(request, 'Successfully added product!')
             return redirect(reverse('product_detail', args=[product.id]))
         else:
-            messages.error(request, 'Failed to add product. Please ensure the form is valid.')
+            messages.error(request, 'Failed to add product. Please ensure the form is valid.')  # noqa: E501
     else:
         form = ProductForm()
     form = ProductForm()
@@ -114,7 +114,7 @@ def edit_product(request, product_id):
             messages.success(request, 'Successfully updated product!')
             return redirect(reverse('product_detail', args=[product.id]))
         else:
-            messages.error(request, 'Failed to update product. Please ensure the form is valid.')
+            messages.error(request, 'Failed to update product. Please ensure the form is valid.')  # noqa: E501
     else:
         form = ProductForm(instance=product)
         messages.info(request, f'You are editing {product.name}')
