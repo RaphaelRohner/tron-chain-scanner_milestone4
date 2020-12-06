@@ -316,3 +316,6 @@
 
   - #145 Setup email depending on environment with chibitalesorg@gmail.com.
 
+# 06/12/2020
+
+  - #146 Resubmitted migrations and HEroku DB connection. Try to fix Heroku App Server Error 500.
