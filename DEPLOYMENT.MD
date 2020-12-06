@@ -325,3 +325,5 @@
   - #148 Try removed line break to fix login issue.
 
   - #149 Removed default email duplette from settings.py.
+
+  - #150 Checked registration process with Heropku app, worked. Emptied Heroku DB, remigrated, added Superuser.
