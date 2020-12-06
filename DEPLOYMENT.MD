@@ -320,4 +320,6 @@
 
   - #146 Resubmitted migrations and HEroku DB connection. Try to fix Heroku App Server Error 500.
 
-  - #147 Resubmit Heroku deployment to fix login in Heroku App. 
+  - #147 Resubmit Heroku deployment to fix login in Heroku App.
+
+  - #148 Try removed line break to fix login issue.
