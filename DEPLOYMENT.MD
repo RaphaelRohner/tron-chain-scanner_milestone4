@@ -339,3 +339,7 @@
   - #154 Started removing unused files and imports, splitting lines > 79 where possible and ignoring the rest, ignoring no member message.
 
   - #155 Corrected Typo in bag-total.html.
+
+# 07/12/2020
+
+  - #156 Corrected or ignored Flake8 and other error messages. Tested App functionality.
