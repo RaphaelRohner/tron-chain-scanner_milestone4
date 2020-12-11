@@ -7,11 +7,9 @@
 <p>Order Number: <strong>{{ order.order_number }}</strong></p>
 <p>Order Date: {{ order.date }}</p>
 
-<div class="bag-notification-wrapper">
-    {% for item in order %}
-        <p>Hello</p>
-    {% endfor %}
-</div>
+{% for item in bag_items %}
+    <p>Hello</p>
+{% endfor %}
 
 <p>Order Total: ${{ order.order_total }}</p>
 <p>Delivery: ${{ order.delivery_cost }}</p>
