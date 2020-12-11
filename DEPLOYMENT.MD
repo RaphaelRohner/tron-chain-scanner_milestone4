@@ -350,4 +350,6 @@
 
   - #158 Try to find Heroku error.
 
-  - #159 Added DB synch withe Heroku DB to Procfile.
+  - #159 Added DB synch with Heroku DB to Procfile.
+
+  - #160 First try with adjusted webhook_handler to send html and plain text order confirmation email.
