@@ -2,4 +2,23 @@
 
 <p>Hello {{ order.full_name }}!</p>
 
-<p><strong>HALLO</strong></p>
+<p>This is a confirmation of your order at Boutique Ado. Your order information is below:</p>
+
+<p>Order Number: <strong>{{ order.order_number }}</strong></p>
+<p>Order Date: {{ order.date }}</p>
+
+<p>Order Total: ${{ order.order_total }}</p>
+<p>Delivery: ${{ order.delivery_cost }}</p>
+<p><strong>Grand Total: ${{ order.grand_total }}</strong></p>
+
+<p>Your order will be shipped to {{ order.street_address1 }} in {{ order.town_or_city }}, {{ order.country }}.</p>
+
+<p>We've got your phone number on file as {{ order.phone_number }}.</p>
+
+<p>If you have any questions, feel free to contact us at {{ contact_email }}.</p>
+
+<p>Thank you for your order!</p>
+
+<p>Sincerely,</p>
+
+<p><strong>Your Tron Chain Scanner Team</strong></p>
