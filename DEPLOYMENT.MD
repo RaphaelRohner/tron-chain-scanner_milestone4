@@ -353,3 +353,5 @@
   - #159 Added DB synch with Heroku DB to Procfile.
 
   - #160 First try with adjusted webhook_handler to send html and plain text order confirmation email.
+
+  - #161 Second try with adjusted webhook_handler to send html and plain text order confirmation email.
