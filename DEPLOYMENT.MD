@@ -349,3 +349,5 @@
   - #157 Added user's full name to profile app.
 
   - #158 Try to find Heroku error.
+
+  - #159 Added DB synch withe Heroku DB to Procfile.
