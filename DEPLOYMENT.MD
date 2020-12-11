@@ -347,3 +347,5 @@
 # 11/12/2020
 
   - #157 Added user's full name to profile app.
+
+  - #158 Added purchased products with quantity and size to confirmation email.
