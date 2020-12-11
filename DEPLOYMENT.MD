@@ -357,3 +357,5 @@
   - #161 Second try with adjusted webhook_handler to send html and plain text order confirmation email.
 
   - #162 Added basic html to order confirmation email.
+
+  - #163 Added products to order confirmation email.
