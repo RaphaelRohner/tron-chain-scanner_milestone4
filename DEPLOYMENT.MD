@@ -343,3 +343,7 @@
 # 07/12/2020
 
   - #156 Corrected or ignored Flake8 and other error messages. Tested App functionality.
+
+# 11/12/2020
+
+  - #157 Added user's full name to profile app.

@@ -7,6 +7,6 @@ class CheckoutConfig(AppConfig):
     def ready(self):
         """
         REQUIRED BY DJANGO
-        APP DOES NOT RUN WITHOUT THE NEVER USED SIGNALS IMPORT
+        APP DOES NOT RUN WITHOUT THE "NEVER USED" SIGNALS IMPORT
         """
         import checkout.signals  # noqa: F401
