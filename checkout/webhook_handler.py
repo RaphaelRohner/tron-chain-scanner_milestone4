@@ -35,7 +35,8 @@ class StripeWH_Handler:
             plain_text,
             settings.DEFAULT_FROM_EMAIL,
             [cust_email],
-            html_message=body
+            html_message=body,
+            fail_silently=False
         )
 
     def handle_event(self, event):
