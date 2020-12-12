@@ -26,7 +26,7 @@ class StripeWH_Handler:
             {'order': order})
         body = render_to_string(
             'checkout/confirmation_emails/confirmation_email_body.html',
-            {'order': order, 'contact_email': settings.DEFAULT_FROM_EMAIL})
+            {'order': order, 'purchases': OrderLineItem, 'contact_email': settings.DEFAULT_FROM_EMAIL})
 
         plain_text = strip_tags(body)
 
