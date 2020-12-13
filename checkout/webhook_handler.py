@@ -1,7 +1,6 @@
 from django.http import HttpResponse
 from django.core.mail import send_mail
 from django.template.loader import render_to_string
-from django.utils.html import strip_tags
 from django.conf import settings
 
 from .models import Order, OrderLineItem
@@ -25,18 +24,14 @@ class StripeWH_Handler:
             'checkout/confirmation_emails/confirmation_email_subject.txt',
             {'order': order})
         body = render_to_string(
-            'checkout/confirmation_emails/confirmation_email_body.html',
+            'checkout/confirmation_emails/confirmation_email_body.txt',
             {'order': order, 'contact_email': settings.DEFAULT_FROM_EMAIL})
-
-        plain_text = strip_tags(body)
 
         send_mail(
             subject,
-            plain_text,
+            body,
             settings.DEFAULT_FROM_EMAIL,
-            [cust_email],
-            html_message=body,
-            fail_silently=False
+            [cust_email]
         )
 
     def handle_event(self, event):
@@ -52,7 +47,6 @@ class StripeWH_Handler:
         Handle the payment_intent.succeeded webhook from Stripe
         """
         intent = event.data.object
-        print(intent)
         pid = intent.id
         bag = intent.metadata.bag
         save_info = intent.metadata.save_info
