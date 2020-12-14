@@ -367,3 +367,5 @@
   - #165 Created addresses app and added address model.
 
   - #166 Created basic address view.
+
+  - #167 Added urls.py and basic addresses html template.
