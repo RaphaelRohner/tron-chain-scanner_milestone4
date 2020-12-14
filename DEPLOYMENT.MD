@@ -365,3 +365,5 @@
   - #164 Added sizes to t-shirts an polos.
 
   - #165 Created addresses app and added address model.
+
+  - #166 Created basic address view.
