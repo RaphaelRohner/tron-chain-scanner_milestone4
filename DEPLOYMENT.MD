@@ -359,3 +359,7 @@
   - #162 Added basic html to order confirmation email.
 
   - #163 Added products to order confirmation email.
+
+# 14/12/2020
+
+  - #164 Added sizes to t-shirts an polos.
