@@ -363,3 +363,5 @@
 # 14/12/2020
 
   - #164 Added sizes to t-shirts an polos.
+
+  - #165 Created addresses app and added address model.
