@@ -22,6 +22,7 @@ class UserAddressesForm(forms.ModelForm):
             'additional_street_address2': 'Street Address 2',
             'additional_county': 'County, State or Locality',
         }
+        print()
 
         self.fields['additional_full_name'].widget.attrs['autofocus'] = True
         for field in self.fields:

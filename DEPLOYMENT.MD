@@ -372,6 +372,10 @@
 
   - #168 Corrected project url for addresses and tested functionality.
 
+# 15/12/2020
+
   - #169 Added address form and view.
 
   - #170 Added Manage Addresses button to profile template.
+
+  - #171 Added address list to address template.

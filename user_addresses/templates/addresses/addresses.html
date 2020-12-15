@@ -35,6 +35,16 @@
                 </form>
             </div>
             <div class="col-12 col-lg-6">
+                {% for item in addresses %}
+                    <div class="row">
+                        <div class="col">
+                            <p>{{item.user}}</p>
+                        </div>
+                        <div class="col">
+                            <p>{{ item.additional_full_name }}</p>
+                        </div>
+                    </div>
+                {% endfor %}
             </div>
         </div>
     </div>
