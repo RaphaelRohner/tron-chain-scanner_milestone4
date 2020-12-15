@@ -373,3 +373,5 @@
   - #168 Corrected project url for addresses and tested functionality.
 
   - #169 Added address form and view.
+
+  - #170 Added Manage Addresses button to profile template.
