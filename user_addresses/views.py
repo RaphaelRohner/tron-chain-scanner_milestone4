@@ -10,8 +10,7 @@ from .forms import UserAddressesForm
 def address(request):
     """ Display the user's addresses. """
     profile = get_object_or_404(UserProfile, user=request.user)
-    addresses = UserAddresses.objects.all()
-    # print(addresses)
+    addresses = UserAddresses.objects.filter(user=request.user)  # noqa: E501, pylint: disable=maybe-no-member
 
     if request.method == 'POST':
         form = UserAddressesForm(request.POST, instance=profile)

@@ -379,3 +379,5 @@
   - #170 Added Manage Addresses button to profile template.
 
   - #171 Added address list to address template.
+
+  - #172 Created filter so only user addresses will list.
