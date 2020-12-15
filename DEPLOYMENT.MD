@@ -371,3 +371,5 @@
   - #167 Added urls.py and basic addresses html template.
 
   - #168 Corrected project url for addresses and tested functionality.
+
+  - #169 Added address form and view.

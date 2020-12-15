@@ -21,4 +21,4 @@ class UserAddresses(models.Model):
     additional_country = CountryField(blank_label='Country', null=True, blank=True)  # noqa: DJ01, E501
 
     def __str__(self):
-        return self.user.username  # pylint: disable=maybe-no-member
+        return self.additional_full_name  # pylint: disable=maybe-no-member
