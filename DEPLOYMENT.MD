@@ -385,3 +385,5 @@
 # 16/12/2020
 
   - #173 Added functionality to add a new address.
+
+  - #174 Set some of the address fields for additional addresses as required.
