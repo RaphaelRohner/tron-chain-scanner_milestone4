@@ -381,3 +381,7 @@
   - #171 Added address list to address template.
 
   - #172 Created filter so only user addresses will list.
+
+# 16/12/2020
+
+  - #173 Added functionality to add a new address.
