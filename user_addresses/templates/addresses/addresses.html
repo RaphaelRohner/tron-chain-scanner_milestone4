@@ -35,16 +35,32 @@
                 </form>
             </div>
             <div class="col-12 col-lg-6">
-                {% for item in addresses %}
-                    <div class="row">
-                        <div class="col">
-                            <p>{{item.user}}</p>
-                        </div>
-                        <div class="col">
-                            <p>{{ item.additional_full_name }}</p>
-                        </div>
-                    </div>
-                {% endfor %}
+                <p class="text-muted">My Addresses</p>
+                <div class="order-history table-responsive">
+                    <table class="table table-sm table-borderless">
+                        <thead>
+                            <tr>
+                                <th>Full Name</th>
+                                <th>Address: Street</th>
+                                <th>Address: Town or City</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {% for item in addresses %}                    
+                                <tr>
+                                    <td>
+                                        <a href="{% url 'addresses' %}"
+                                        title="{{ item.additional_full_name }}">
+                                            {{ item.additional_full_name }}
+                                        </a>
+                                    </td>
+                                    <td>{{ item.additional_street_address1 }}</td>
+                                    <td>{{ item.additional_town_or_city }}</td>
+                                </tr>
+                            {% endfor %}
+                        </tbody>
+                    </table>
+                </div>                
             </div>
         </div>
     </div>
