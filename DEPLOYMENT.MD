@@ -395,3 +395,7 @@
   - #176 Created apps freescanner and walletscanner and registered them in settings.py. Insatlled Trongrid.
 
   - #177 Created basic walletscanner page and linked it in navigation.
+
+  - #178 Created basic freescanner page and linked it in navigation.
+
+  
