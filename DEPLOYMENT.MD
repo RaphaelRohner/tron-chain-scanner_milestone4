@@ -398,4 +398,5 @@
 
   - #178 Created basic freescanner page and linked it in navigation.
 
-  
+  - #179 Installed trongrid and added check if Tronlink is connected on walletscanner page.
+

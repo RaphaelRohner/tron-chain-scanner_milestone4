@@ -3,7 +3,7 @@
 {% extends "base.html" %}
 {% load static %}
 
-{% block page_header %}
+{% block page_header %}    
     <div class="container header-container">
         <div class="row">
             <div class="col"></div>
@@ -11,12 +11,22 @@
     </div>
 {% endblock %}
 
-{% block content %}
-    <div class="container">
+{% block content %}    
+    <!-- Cover base.html background -->
+    <div class="overlay"></div>
+    
+    <div class="container-fluid">
         <div class="row">
-            <div class="col">
-                <h1>Walletscanner</h1>
+            <div class="col text-center mt-3">
+                <h2 class="logo-font">Wallet Scanner</h2>
+                <p id="trontest"></p>
+                <hr class="w-50 mb-1">
             </div>
-        </div>
+        </div>        
     </div>
+{% endblock %}
+
+{% block postloadjs %}
+    {{ block.super }}
+    <script type="text/javascript" src="{% static 'js/walletscanner.js' %}"></script>
 {% endblock %}

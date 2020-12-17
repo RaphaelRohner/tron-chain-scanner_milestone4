@@ -30,7 +30,7 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
         <script src="https://kit.fontawesome.com/8fb5ae9ef1.js" crossorigin="anonymous"></script>
         <!-- STRIPE -->
-        <script src="https://js.stripe.com/v3/"></script>        
+        <script src="https://js.stripe.com/v3/"></script>      
     {% endblock %}
 
     {% block extra_js %}
@@ -38,7 +38,7 @@
 
     <title>Tron Chain Scanner {% block extra_title %}{% endblock %}</title>
   </head>
-  <body>
+  <body onload="getTronlink()">
     <header class="container-fluid fixed-top">
         <div id="topnav" class="row bg-white pt-lg-2 d-none d-lg-flex">
             <!-- SITE NAME - COLUMN 1 -->
@@ -114,9 +114,9 @@
             </nav>
         </div>
         <div id="delivery-banner" class="row text-center">
-            <div class="col bg-black text-white">
+            <div class="col-12 bg-black text-white">
                 <h4 class="logo-font my-1">Scan TRON Chain & shop Merch!</h4>                
-            </div>            
+            </div>           
         </div>
     </header>
 
