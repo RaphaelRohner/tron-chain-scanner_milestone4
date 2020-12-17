@@ -393,3 +393,5 @@
   - #175 Added list of available addresses.
 
   - #176 Created apps freescanner and walletscanner and registered them in settings.py. Insatlled Trongrid.
+
+  - #177 Created basic walletscanner page and linked it in navigation.
