@@ -49,6 +49,8 @@ INSTALLED_APPS = [
     'checkout',
     'profiles',
     'user_addresses',
+    'freescanner',
+    'walletscanner',
 
     # Other
     'crispy_forms',
