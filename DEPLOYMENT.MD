@@ -406,3 +406,5 @@
 
   - #181 Test JS onload from base.html on Heroku after removing disable_collectstatic.
 
+  - #182 Removed additional JS from main tron scanner app.
+
