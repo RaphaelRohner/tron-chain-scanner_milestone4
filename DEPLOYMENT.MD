@@ -404,3 +404,5 @@
 
   - #180 Test JS onload from base.html on Heroku.
 
+  - #181 Test JS onload from base.html on Heroku after removing disable_collectstatic.
+
