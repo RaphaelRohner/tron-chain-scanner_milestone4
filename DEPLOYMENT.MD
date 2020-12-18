@@ -400,3 +400,7 @@
 
   - #179 Installed trongrid and added check if Tronlink is connected on walletscanner page.
 
+# 18/12/2020
+
+  - #180 Test JS onload from base.html on Heroku.
+
