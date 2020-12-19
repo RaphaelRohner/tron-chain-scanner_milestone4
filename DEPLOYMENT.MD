@@ -413,3 +413,5 @@
   - #183 Added edit user addresses functionality.
 
   - #184 Fixed delete address view and url. Added back to Profile button and matched edit and delete button layouts.
+
+  - #185 Added method to catch manually entered urls trying to edit addresses from other users.

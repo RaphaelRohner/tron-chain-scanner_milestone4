@@ -39,7 +39,18 @@ def address(request):
 def edit_address(request, item_id):
     """ Edit an user address in the profile """
 
+    # catch manual entered edit address urls
+    # and check if address belongs to user
+    currentUser = request.user
     address = get_object_or_404(UserAddresses, pk=item_id)
+    addressOwner = address.user
+
+    if not currentUser == addressOwner:
+        messages.error(request, 'You can only edit your own addresses.')
+        response = redirect('/address/')
+        return response
+
+    # handle form submissions
     if request.method == 'POST':
         form = UserAddressesForm(request.POST, request.FILES, instance=address)
         if form.is_valid():
@@ -53,6 +64,7 @@ def edit_address(request, item_id):
         form = UserAddressesForm(instance=address)
         messages.info(request, f'You are editing {address.additional_full_name}')  # noqa: E501
 
+    # render the template
     template = 'user_addresses/edit_addresses.html'
     context = {
         'form': form,
