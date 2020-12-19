@@ -408,3 +408,6 @@
 
   - #182 Removed additional JS from main tron scanner app.
 
+# 19/12/2020
+
+  - #183 Added edit user addresses functionality.

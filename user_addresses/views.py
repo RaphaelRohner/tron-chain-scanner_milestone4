@@ -1,4 +1,4 @@
-from django.shortcuts import render  # , get_object_or_404
+from django.shortcuts import render, redirect, get_object_or_404
 from django.contrib import messages
 from django.contrib.auth.decorators import login_required
 # from profiles.models import UserProfile  # import the user's profile
@@ -8,7 +8,10 @@ from .forms import UserAddressesForm
 
 @login_required
 def address(request):
-    """ Display address form and the user's addresses. """
+    """ \
+    Display address form and list of user's addresses. \
+    Add a new address. \
+    """
     # profile = get_object_or_404(UserProfile, user=request.user)
     addresses = UserAddresses.objects.filter(user=request.user)  # noqa: E501, pylint: disable=maybe-no-member
 
@@ -23,10 +26,45 @@ def address(request):
     else:
         form = UserAddressesForm()
 
-    template = 'addresses/addresses.html'
+    template = 'user_addresses/addresses.html'
     context = {
         'form': form,
         'addresses': addresses,
     }
 
     return render(request, template, context)
+
+
+@login_required
+def edit_address(request, item_id):
+    """ Edit an user address in the profile """
+
+    address = get_object_or_404(UserAddresses, pk=item_id)
+    if request.method == 'POST':
+        form = UserAddressesForm(request.POST, request.FILES, instance=address)
+        if form.is_valid():
+            form.save()
+            messages.success(request, 'Successfully updated address!')
+            response = redirect('/address/')
+            return response
+        else:
+            messages.error(request, 'Failed to update address. Please ensure the form is valid.')  # noqa: E501
+    else:
+        form = UserAddressesForm(instance=address)
+        messages.info(request, f'You are editing {address.additional_full_name}')  # noqa: E501
+
+    template = 'user_addresses/edit_addresses.html'
+    context = {
+        'form': form,
+        'address': address,
+    }
+
+    return render(request, template, context)
+
+
+@login_required
+def delete_address(request, item_id):
+    address = get_object_or_404(UserAddresses, pk=item_id)
+    address.delete()
+    messages.success(request, 'Address deleted!')
+    return redirect('/address/')
