@@ -67,4 +67,5 @@ def delete_address(request, item_id):
     address = get_object_or_404(UserAddresses, pk=item_id)
     address.delete()
     messages.success(request, 'Address deleted!')
-    return redirect('/address/')
+    response = redirect('/address/')
+    return response

@@ -411,3 +411,5 @@
 # 19/12/2020
 
   - #183 Added edit user addresses functionality.
+
+  - #184 Fixed delete address view and url. Added back to Profile button and matched edit and delete button layouts.
