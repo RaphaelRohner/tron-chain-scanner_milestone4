@@ -8,9 +8,9 @@ from .forms import UserAddressesForm
 
 @login_required
 def address(request):
-    """ \
-    Display address form and list of user's addresses. \
-    Add a new address. \
+    """
+    Display address form and list of user's addresses.
+    Add a new address.
     """
     # profile = get_object_or_404(UserProfile, user=request.user)
     addresses = UserAddresses.objects.filter(user=request.user)  # noqa: E501, pylint: disable=maybe-no-member

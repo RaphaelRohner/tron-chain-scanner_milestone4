@@ -43,7 +43,7 @@
                     <table class="table table-sm table-borderless">
                         <thead>
                             <tr>
-                                <th>Full Name</th>
+                                <th>Checkout with:</th>
                                 <th>Address: Street</th>
                                 <th>Address: Town or City</th>
                                 <th>Action:</th>
@@ -53,8 +53,7 @@
                             {% for item in addresses %}                    
                                 <tr>
                                     <td>
-                                        <a href="{% url 'addresses' %}"
-                                        title="{{ item.additional_full_name }}">
+                                    <a href="{% url 'checkoutadr' item.id %}" title="{{ item.additional_full_name }}">
                                             {{ item.additional_full_name }}
                                         </a>
                                     </td>
