@@ -48,6 +48,3 @@ def get_transactions_trc20():
     response = requests.request("GET", url)
 
     print(response.text)
-
-
-get_transactions_trc20()

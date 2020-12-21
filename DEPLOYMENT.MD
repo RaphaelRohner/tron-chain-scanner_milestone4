@@ -423,3 +423,5 @@
 # 21/12/2020
 
   - #187 Installed TronGrid and Tronapi and added to requirements. Created basic functions to access all available API functionality.
+
+  - #188 Added JS to walletscanner to send a payment via Tronlink.

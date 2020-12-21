@@ -142,6 +142,3 @@ def get_latest_block_events():
     response = requests.request("GET", url)
 
     print(response.text)
-
-
-get_latest_block_events()
