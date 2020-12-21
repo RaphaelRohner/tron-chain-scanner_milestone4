@@ -419,3 +419,7 @@
 # 20/12/2020
 
   - #186 Added view and template to checkout from a stored address.
+
+# 21/12/2020
+
+  - #187 Installed TronGrid and Tronapi and added to requirements. Created basic functions to access all available API functionality.

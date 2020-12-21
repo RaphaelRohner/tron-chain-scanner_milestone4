@@ -3,7 +3,8 @@
 The Tron Chain Scanner website will offer:
 * A freepage to get an overview about movements on the Tron blockchain.
 * An option to buy access to more search features by using the Tronlink wallet in Chrome on desktop.
-* A demo merchandise shop with Stripe integration to purchase merchandise articles using Stripe.
+* A rebuild of the Boutique Ado demo merchandise shop with Stripe integration to purchase merchandise articles using Stripe.
+* Additionally the users can store extra addresses and select these to send purchases to stored addresses.
 
 ## Table of contents
 
