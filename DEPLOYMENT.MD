@@ -431,3 +431,5 @@
 # 23/12/2020
 
   - #190 Started Freescanner and added model, admin, forms and view.
+
+  - #191 Fixed Edit Contracts form and added choice field.

@@ -2,11 +2,11 @@ from django.shortcuts import render
 from django.contrib import messages
 import requests
 
-from tronapi import Tron
-from tronapi import HttpProvider
-
 from .models import Identifiers
 from .forms import FreescannerForm
+
+from tronapi import Tron
+from tronapi import HttpProvider
 
 
 # Create your views here.
@@ -15,11 +15,11 @@ def free_scanner(request):
     A view to check if Tronlink wallet is available in the browser.
     """
 
-    url = "https://api.trongrid.io/v1/accounts/TTfoWGU2M939cgZm8CksPtz1ytJRM9GiN7"  # noqa: E501
+    # url = "https://api.trongrid.io/v1/accounts/TTfoWGU2M939cgZm8CksPtz1ytJRM9GiN7"  # noqa: E501
 
-    response = requests.request("GET", url)
+    # response = requests.request("GET", url)
 
-    print(response.text)
+    # print(response.text)
 
     context = {}
 
@@ -46,6 +46,7 @@ def identifiers(request):
 
     template = 'freescanner/edit_contracts.html'
     context = {
+        'form': form,
         'identifiers': identifiers,
     }
 

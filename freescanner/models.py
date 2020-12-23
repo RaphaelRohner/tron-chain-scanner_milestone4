@@ -1,6 +1,15 @@
 from django.db import models
 
 
+# DEFINING DROPDOWN VALUES
+CHOICES = [
+    ('Contract', 'Contract'),
+    ('TRC10', 'TRC10 Token'),
+    ('TRC20', 'TRC20 Token'),
+    ('Wallet', 'Wallet Address'),
+]
+
+
 # Create your models here.
 class Identifiers(models.Model):
     """
@@ -13,7 +22,7 @@ class Identifiers(models.Model):
     identifier_id = models.CharField(max_length=40, null=False, blank=False)
     identifier_name = models.CharField(max_length=50, null=False, blank=False)
     # e.g. contract, token, address
-    identifier_type = models.CharField(max_length=30, null=False, blank=False)
+    identifier_type = models.CharField(max_length=100, null=False, blank=False, choices=CHOICES)  # noqa: E501
     identifier_comment = models.CharField(max_length=250, null=False, blank=False)  # noqa: E501
 
     def __str__(self):

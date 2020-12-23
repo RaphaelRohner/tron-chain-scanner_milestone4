@@ -30,9 +30,9 @@
                     {% csrf_token %}
                     {{ form|crispy }}
                     <a href="{% url 'freescanner' %}" class="btn btn-outline-black rounded-0 text-uppercase float-left">                    
-                        <span class="font-weight-bold">Back to scanner</span>
+                        <span class="font-weight-bold">Back to Free scanner</span>
                     </a>
-                    <button class="btn btn-black rounded-0 text-uppercase float-right">Add Address</button>
+                    <button class="btn btn-black rounded-0 text-uppercase float-right">Add Contract</button>
                 </form>
             </div>        
             <div class="col-12 col-lg-6">
@@ -41,21 +41,19 @@
                     <table class="table table-sm table-borderless">
                         <thead>
                             <tr>
-                                <th>Identifier:</th>
                                 <th>Name:</th>
                                 <th>Type:</th>
-                                <th>Description:</th>
                             </tr>
                         </thead>
                         <tbody>
-                            {% for item in wallet %}                    
+                            {% for item in identifiers %}                    
                                 <tr>
                                     <td>
-                                    <a href="{% url 'checkoutadr' item.id %}" title="{{ item.additional_full_name }}">
-                                            {{ item.wallet_pk }}
+                                    <a href="{% url 'checkoutadr' item.id %}" title="{{ item.identifier_name }}">
+                                            {{ item.identifier_name }}
                                         </a>
                                     </td>
-                                    <td>{{ item.wallet_name }}</td>
+                                    <td>{{ item.identifier_type }}</td>
                                     <td>                                        
                                         <a href="{% url 'edit_address' item.id %}" class="btn btn-outline-black rounded-0 text-uppercase float-left">                    
                                             <span class="font-weight-bold">Edit</span>
