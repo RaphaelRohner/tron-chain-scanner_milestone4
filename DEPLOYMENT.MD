@@ -427,3 +427,7 @@
   - #188 Added JS to walletscanner to send a payment via Tronlink.
 
   - #189 Added data model for trx wallets and payments.
+
+# 23/12/2020
+
+  - #190 Started Freescanner and added model, admin, forms and view.

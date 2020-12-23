@@ -19,7 +19,7 @@ class WalletPay(models.Model):
     to calculate available usage time.
     """
     wallet = models.ForeignKey('Wallet', on_delete=models.CASCADE)
-    payment_date = models.DateTimeField(null=False, blank=False)
+    payment_date = models.DateTimeField(auto_now_add=True)
     payment_amount = models.IntegerField(null=False, blank=False)
     payment_currency = models.CharField(max_length=50, null=False, blank=False)
 

@@ -1,20 +1,19 @@
 from django.shortcuts import render
+from django.contrib import messages
 import requests
 
 from tronapi import Tron
 from tronapi import HttpProvider
 
-full_node = HttpProvider('https://api.trongrid.io')
-solidity_node = HttpProvider('https://api.trongrid.io')
-event_server = HttpProvider('https://api.trongrid.io')
-tron = Tron(full_node=full_node,
-            solidity_node=solidity_node,
-            event_server=event_server)
+from .models import Identifiers
+from .forms import FreescannerForm
 
 
 # Create your views here.
 def free_scanner(request):
-    """ A view to check if Tronlink wallet is available in the browser. """
+    """
+    A view to check if Tronlink wallet is available in the browser.
+    """
 
     url = "https://api.trongrid.io/v1/accounts/TTfoWGU2M939cgZm8CksPtz1ytJRM9GiN7"  # noqa: E501
 
@@ -25,6 +24,40 @@ def free_scanner(request):
     context = {}
 
     return render(request, 'freescanner/freescanner.html', context)
+
+
+def identifiers(request):
+    """
+    A view to add and edit contracts.
+    """
+
+    identifiers = Identifiers.objects.all()  # pylint: disable=maybe-no-member
+    print(identifiers)
+
+    if request.method == 'POST':
+        form = FreescannerForm(request.POST)
+        if form.is_valid():
+            form.save()
+            messages.success(request, 'Wallet added successfully')
+        else:
+            messages.error(request, 'Action failed. Please ensure the form is valid.')  # noqa: 501
+    else:
+        form = FreescannerForm()
+
+    template = 'freescanner/edit_contracts.html'
+    context = {
+        'identifiers': identifiers,
+    }
+
+    return render(request, template, context)
+
+
+full_node = HttpProvider('https://api.trongrid.io')
+solidity_node = HttpProvider('https://api.trongrid.io')
+event_server = HttpProvider('https://api.trongrid.io')
+tron = Tron(full_node=full_node,
+            solidity_node=solidity_node,
+            event_server=event_server)
 
 
 # TRON API OPTIONS FOR TRC10 TOKENS
