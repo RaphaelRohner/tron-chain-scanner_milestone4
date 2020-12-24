@@ -1,20 +1,20 @@
 from django.db import models
 
 
-# DEFINING DROPDOWN VALUES
-CHOICES = [
-    ('Contract', 'Contract'),
-    ('TRC10', 'TRC10 Token'),
-    ('TRC20', 'TRC20 Token'),
-    ('Wallet', 'Wallet Address'),
-]
-
-
 # Create your models here.
 class Identifiers(models.Model):
     """
     A model to store all sorts of Tron identifiers in.
     """
+
+    # DEFINING DROPDOWN VALUES
+    CHOICES = (
+        ('', 'Select identifier type'),
+        ('Contract', 'Contract'),
+        ('TRC10', 'TRC10 Token'),
+        ('TRC20', 'TRC20 Token'),
+        ('Wallet', 'Wallet Address'),
+    )
 
     class Meta:
         verbose_name_plural = 'Identifiers'

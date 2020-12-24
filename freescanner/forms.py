@@ -6,7 +6,7 @@ class FreescannerForm(forms.ModelForm):
 
     class Meta:
         model = Identifiers
-        fields = '__all__'
+        fields = ('__all__')
 
     def __init__(self, *args, **kwargs):
         """
@@ -17,13 +17,13 @@ class FreescannerForm(forms.ModelForm):
         placeholders = {
             'identifier_id': 'Identifier, e.g. contract or address',
             'identifier_name': 'Name the identifier, e.g. Bittorrent Staking',
-            'identifier_type': 'Select type of identifier',
             'identifier_comment': 'Describe the Identifier, max 250 digits',
         }
 
         self.fields['identifier_id'].widget.attrs['autofocus'] = True
         for field in self.fields:
-            placeholder = placeholders[field]
-            self.fields[field].widget.attrs['placeholder'] = placeholder
             self.fields[field].widget.attrs['class'] = 'border-black rounded-0 profile-form-input'  # noqa: 501
             self.fields[field].label = False
+            if field != 'identifier_type':
+                placeholder = placeholders[field]
+                self.fields[field].widget.attrs['placeholder'] = placeholder

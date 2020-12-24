@@ -433,3 +433,9 @@
   - #190 Started Freescanner and added model, admin, forms and view.
 
   - #191 Fixed Edit Contracts form and added choice field.
+
+# 24/12/2020
+
+  - #192 Set default value for select field on Freescanner add page and adjusted color.
+
+  
