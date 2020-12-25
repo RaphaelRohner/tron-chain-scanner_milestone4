@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect, get_object_or_404
 from django.contrib import messages
 import requests
 
@@ -10,7 +10,7 @@ from tronapi import HttpProvider
 
 
 # Create your views here.
-def free_scanner(request):
+def freescanner(request):
     """
     A view to check if Tronlink wallet is available in the browser.
     """
@@ -40,6 +40,8 @@ def identifiers(request):
         if form.is_valid():
             form.save()
             messages.success(request, 'Identifier added successfully')
+            response = redirect('/freescanner/')
+            return response
         else:
             messages.error(request, 'Action failed. Please ensure the form is valid.')  # noqa: 501
     else:
@@ -50,6 +52,39 @@ def identifiers(request):
         'form': form,
         'identifiers': identifiers,
     }
+
+    return render(request, template, context)
+
+
+def edit_contracts(request, item_id):
+    """ A view to edit a contract stored in the database """
+
+    # get the clicked identifier belonging to the link clicked
+    contract = get_object_or_404(Identifiers, pk=item_id)
+    print(contract.id, contract.identifier_name)
+
+    # handle form submissions
+    if request.method == 'POST':
+        form = FreescannerForm(request.POST, request.FILES, instance=contract)
+        if form.is_valid():
+            form.save()
+            messages.success(request, 'Successfully updated identifier!')
+            response = redirect('/freescanner/add/')
+            return response
+        else:
+            messages.error(request, 'Failed to update identifier. Please ensure the form is valid.')  # noqa: E501
+    else:
+        form = FreescannerForm(instance=contract)
+        messages.info(request, f'You are editing {contract.identifier_name}')  # noqa: E501
+
+    # render the template
+    template = 'freescanner/edit_contracts.html/'
+    context = {
+        'form': form,
+        'contract': contract,
+    }
+
+    print(context)
 
     return render(request, template, context)
 

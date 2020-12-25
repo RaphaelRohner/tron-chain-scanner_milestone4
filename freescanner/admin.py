@@ -5,7 +5,7 @@ from .models import Identifiers
 class IdentifiersAdmin(admin.ModelAdmin):
     list_display = (
         'identifier_name',
-        'identifier_id',
+        'identifier_contract',
         'identifier_type',
         'identifier_comment',
     )

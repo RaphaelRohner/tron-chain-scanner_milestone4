@@ -15,12 +15,12 @@ class FreescannerForm(forms.ModelForm):
         """
         super().__init__(*args, **kwargs)
         placeholders = {
-            'identifier_id': 'Identifier, e.g. contract or address',
+            'identifier_contract': 'Identifier, e.g. contract or address',
             'identifier_name': 'Name the identifier, e.g. Bittorrent Staking',
             'identifier_comment': 'Describe the Identifier, max 250 digits',
         }
 
-        self.fields['identifier_id'].widget.attrs['autofocus'] = True
+        self.fields['identifier_contract'].widget.attrs['autofocus'] = True
         for field in self.fields:
             self.fields[field].widget.attrs['class'] = 'border-black rounded-0 profile-form-input'  # noqa: 501
             self.fields[field].label = False

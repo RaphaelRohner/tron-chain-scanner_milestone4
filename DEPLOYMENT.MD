@@ -441,3 +441,5 @@
 # 25/12/2020
 
   - #193 Renamed and freescanner and walletscanner pages and adjusted urls and button layout to match.
+
+  - #194 Added functionality to edit Tron identifiers and set the identifier to be a unique value. 

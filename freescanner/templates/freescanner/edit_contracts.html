@@ -18,57 +18,24 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col text-center mt-3">
-                <h2 class="logo-font">Add or edit contracts</h2>
-                <p id="trontest"></p>
+                <h2 class="logo-font">Edit Identifier</h2>
                 <hr class="w-50 mb-1">
             </div>
         </div>
         <div class="row">
             <div class="col-12 col-lg-6">
-                <p class="text-muted">Add a contract</p>
-                <form class="mt-3" action="{% url 'identifiers' %}" method="POST" id="identifiers-update-form">
+                <p class="text-muted">Identifier to edit</p>
+                <form class="mt-3" action="{% url 'edit_contracts' contract.id %}" method="POST" id="identifiers-update-form">
                     {% csrf_token %}
                     {{ form|crispy }}
-                    <a href="{% url 'freescanner' %}" class="btn btn-outline-black rounded-0 text-uppercase float-left">                    
-                        <span class="font-weight-bold">Back to Free scanner</span>
+                    <a href="{% url 'identifiers' %}" class="btn btn-outline-black rounded-0 text-uppercase float-left">                    
+                        <span class="font-weight-bold">Cancel</span>
                     </a>
-                    <button class="btn btn-black rounded-0 text-uppercase float-right">Add Contract</button>
+                    <button class="btn btn-black rounded-0 text-uppercase float-right">Update</button>
                 </form>
             </div>        
             <div class="col-12 col-lg-6">
-                <p class="text-muted">Additional Wallets</p>
-                <div class="order-history table-responsive">
-                    <table class="table table-sm table-borderless">
-                        <thead>
-                            <tr>
-                                <th>Name:</th>
-                                <th>Type:</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            {% for item in identifiers %}                    
-                                <tr>
-                                    <td>
-                                    <a href="{% url 'checkoutadr' item.id %}" title="{{ item.identifier_name }}">
-                                            {{ item.identifier_name }}
-                                        </a>
-                                    </td>
-                                    <td>{{ item.identifier_type }}</td>
-                                    <td>                                        
-                                        <a href="{% url 'edit_address' item.id %}" class="btn btn-outline-black rounded-0 text-uppercase float-left">                    
-                                            <span class="font-weight-bold">Edit</span>
-                                        </a>
-                                    </td>
-                                    <td>
-                                        <a href="{% url 'delete_address' item.id %}" class="btn btn-black rounded-0 text-uppercase float-right">                    
-                                            <span class="font-weight-bold">Delete</span>
-                                        </a>
-                                    </td>
-                                </tr>
-                            {% endfor %}
-                        </tbody>
-                    </table>
-                </div>
+
             </div>
         </div>
         <hr class="w-90 mb-1">
