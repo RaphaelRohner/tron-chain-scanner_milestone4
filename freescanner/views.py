@@ -21,9 +21,11 @@ def free_scanner(request):
 
     # print(response.text)
 
+    template = 'freescanner/freescanner.html/'
+
     context = {}
 
-    return render(request, 'freescanner/freescanner.html', context)
+    return render(request, template, context)
 
 
 def identifiers(request):
@@ -32,19 +34,18 @@ def identifiers(request):
     """
 
     identifiers = Identifiers.objects.all()  # pylint: disable=maybe-no-member
-    print(identifiers)
 
     if request.method == 'POST':
         form = FreescannerForm(request.POST)
         if form.is_valid():
             form.save()
-            messages.success(request, 'Wallet added successfully')
+            messages.success(request, 'Identifier added successfully')
         else:
             messages.error(request, 'Action failed. Please ensure the form is valid.')  # noqa: 501
     else:
         form = FreescannerForm()
 
-    template = 'freescanner/edit_contracts.html'
+    template = 'freescanner/add_contracts.html/'
     context = {
         'form': form,
         'identifiers': identifiers,

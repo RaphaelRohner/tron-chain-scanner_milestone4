@@ -438,4 +438,6 @@
 
   - #192 Set default value for select field on Freescanner add page and adjusted color.
 
-  
+# 25/12/2020
+
+  - #193 Renamed and freescanner and walletscanner pages and adjusted urls and button layout to match.

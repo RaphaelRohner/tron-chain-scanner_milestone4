@@ -3,5 +3,5 @@ from . import views
 
 urlpatterns = [
     path('', views.free_scanner, name='freescanner'),
-    path('freescanner/', views.identifiers, name='identifiers'),
+    path('identifiers/', views.identifiers, name='identifiers'),
 ]

@@ -35,7 +35,7 @@ def mwallet(request):
     else:
         form = WalletForm()
 
-    template = 'walletscanner/edit_primary_wallet.html'
+    template = 'walletscanner/primary_wallet.html'
     context = {
         'form': form,
         'wallet': wallet,
