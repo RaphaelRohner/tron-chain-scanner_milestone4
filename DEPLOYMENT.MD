@@ -445,3 +445,7 @@
   - #194 Added functionality to edit Tron identifiers and set the identifier to be a unique value.
 
   - #195 Added functionality to delete Tron identifiers and renamed all related variables from contract to identifier.
+
+  - #196 Added basic confirmation request when deleting identifier or address.
+
+  - #196 

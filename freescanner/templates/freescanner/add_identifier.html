@@ -42,22 +42,19 @@
                             <tr>
                                 <th>Name:</th>
                                 <th>Type:</th>
+                                <th class="float-left; text-align: center">Action:</th>
                             </tr>
                         </thead>
                         <tbody>
                             {% for item in identifiers %}                    
                                 <tr>
-                                    <td>
-                                        <a href="{% url 'checkoutadr' item.id %}" title="{{ item.identifier_name }}">
-                                            {{ item.identifier_name }}
-                                        </a>
-                                    </td>
+                                    <td>{{ item.identifier_name }}</td>
                                     <td>{{ item.identifier_type }}</td>
                                     <td class="float-right">                                        
                                         <a href="{% url 'edit_identifier' item.id %}" class="btn btn-outline-black rounded-0 text-uppercase">                    
                                             <span class="font-weight-bold">Edit</span>
                                         </a>
-                                        <a href="{% url 'delete_identifier' item.id %}" class="btn btn-black rounded-0 text-uppercase float-right">                    
+                                        <a href="{% url 'delete_identifier' item.id %}" class="btn btn-black rounded-0 text-uppercase float-right" onclick="return confirm('Delete identifier?');">                    
                                             <span class="font-weight-bold">Delete</span>
                                         </a>
                                     </td>

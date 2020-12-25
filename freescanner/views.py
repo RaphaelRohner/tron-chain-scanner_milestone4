@@ -91,6 +91,7 @@ def edit_identifier(request, item_id):
 
 def delete_identifier(request, item_id):
     identifier = get_object_or_404(Identifiers, pk=item_id)
+
     identifier.delete()
     messages.success(request, 'Identifier deleted!')
     response = redirect('/freescanner/add/')

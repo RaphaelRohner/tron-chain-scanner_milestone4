@@ -53,22 +53,20 @@
                             {% for item in addresses %}                    
                                 <tr>
                                     <td>
-                                    <a href="{% url 'checkoutadr' item.id %}" title="{{ item.additional_full_name }}">
+                                        <a href="{% url 'checkoutadr' item.id %}" title="{{ item.additional_full_name }}">
                                             {{ item.additional_full_name }}
                                         </a>
                                     </td>
                                     <td>{{ item.additional_street_address1 }}</td>
                                     <td>{{ item.additional_town_or_city }}</td>
-                                    <td>                                        
-                                        <a href="{% url 'edit_address' item.id %}" class="btn btn-outline-black rounded-0 text-uppercase float-left">                    
+                                    <td class="float-right">                                        
+                                        <a href="{% url 'edit_address' item.id %}" class="btn btn-outline-black rounded-0 text-uppercase">                    
                                             <span class="font-weight-bold">Edit</span>
                                         </a>
-                                    </td>
-                                    <td>
-                                        <a href="{% url 'delete_address' item.id %}" class="btn btn-black rounded-0 text-uppercase float-right">                    
+                                        <a href="{% url 'delete_address' item.id %}" class="btn btn-black rounded-0 text-uppercase float-right" onclick="return confirm('Delete Address?');">                    
                                             <span class="font-weight-bold">Delete</span>
                                         </a>
-                                    </td>
+                                    </td>                                    
                                 </tr>
                             {% endfor %}
                         </tbody>
