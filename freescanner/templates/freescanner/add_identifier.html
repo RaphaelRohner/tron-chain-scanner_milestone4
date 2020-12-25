@@ -54,10 +54,10 @@
                                     </td>
                                     <td>{{ item.identifier_type }}</td>
                                     <td class="float-right">                                        
-                                        <a href="{% url 'edit_contracts' item.id %}" class="btn btn-outline-black rounded-0 text-uppercase">                    
+                                        <a href="{% url 'edit_identifier' item.id %}" class="btn btn-outline-black rounded-0 text-uppercase">                    
                                             <span class="font-weight-bold">Edit</span>
                                         </a>
-                                        <a href="#" class="btn btn-black rounded-0 text-uppercase float-right">                    
+                                        <a href="{% url 'delete_identifier' item.id %}" class="btn btn-black rounded-0 text-uppercase float-right">                    
                                             <span class="font-weight-bold">Delete</span>
                                         </a>
                                     </td>

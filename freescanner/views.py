@@ -30,7 +30,7 @@ def freescanner(request):
 
 def identifiers(request):
     """
-    A view to add and edit contracts.
+    A view to add and edit identifier.
     """
 
     identifiers = Identifiers.objects.all()  # pylint: disable=maybe-no-member
@@ -40,14 +40,14 @@ def identifiers(request):
         if form.is_valid():
             form.save()
             messages.success(request, 'Identifier added successfully')
-            response = redirect('/freescanner/')
+            response = redirect('/freescanner/add/')
             return response
         else:
             messages.error(request, 'Action failed. Please ensure the form is valid.')  # noqa: 501
     else:
         form = FreescannerForm()
 
-    template = 'freescanner/add_contracts.html/'
+    template = 'freescanner/add_identifier.html/'
     context = {
         'form': form,
         'identifiers': identifiers,
@@ -56,16 +56,16 @@ def identifiers(request):
     return render(request, template, context)
 
 
-def edit_contracts(request, item_id):
-    """ A view to edit a contract stored in the database """
+def edit_identifier(request, item_id):
+    """ A view to edit a identifier stored in the database """
 
     # get the clicked identifier belonging to the link clicked
-    contract = get_object_or_404(Identifiers, pk=item_id)
-    print(contract.id, contract.identifier_name)
+    identifier = get_object_or_404(Identifiers, pk=item_id)
+    print(identifier.id, identifier.identifier_name)
 
     # handle form submissions
     if request.method == 'POST':
-        form = FreescannerForm(request.POST, request.FILES, instance=contract)
+        form = FreescannerForm(request.POST, request.FILES, instance=identifier)  # noqa: E501
         if form.is_valid():
             form.save()
             messages.success(request, 'Successfully updated identifier!')
@@ -74,19 +74,27 @@ def edit_contracts(request, item_id):
         else:
             messages.error(request, 'Failed to update identifier. Please ensure the form is valid.')  # noqa: E501
     else:
-        form = FreescannerForm(instance=contract)
-        messages.info(request, f'You are editing {contract.identifier_name}')  # noqa: E501
+        form = FreescannerForm(instance=identifier)
+        messages.info(request, f'You are editing {identifier.identifier_name}')  # noqa: E501
 
     # render the template
-    template = 'freescanner/edit_contracts.html/'
+    template = 'freescanner/edit_identifier.html/'
     context = {
         'form': form,
-        'contract': contract,
+        'identifier': identifier,
     }
 
     print(context)
 
     return render(request, template, context)
+
+
+def delete_identifier(request, item_id):
+    identifier = get_object_or_404(Identifiers, pk=item_id)
+    identifier.delete()
+    messages.success(request, 'Identifier deleted!')
+    response = redirect('/freescanner/add/')
+    return response
 
 
 full_node = HttpProvider('https://api.trongrid.io')

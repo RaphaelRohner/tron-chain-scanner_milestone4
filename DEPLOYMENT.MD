@@ -442,4 +442,6 @@
 
   - #193 Renamed and freescanner and walletscanner pages and adjusted urls and button layout to match.
 
-  - #194 Added functionality to edit Tron identifiers and set the identifier to be a unique value. 
+  - #194 Added functionality to edit Tron identifiers and set the identifier to be a unique value.
+
+  - #195 Added functionality to delete Tron identifiers and renamed all related variables from contract to identifier.

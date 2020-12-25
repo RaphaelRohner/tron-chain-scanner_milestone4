@@ -25,7 +25,7 @@
         <div class="row">
             <div class="col-12 col-lg-6">
                 <p class="text-muted">Identifier to edit</p>
-                <form class="mt-3" action="{% url 'edit_contracts' contract.id %}" method="POST" id="identifiers-update-form">
+                <form class="mt-3" action="{% url 'edit_identifier' identifier.id %}" method="POST" id="identifiers-update-form">
                     {% csrf_token %}
                     {{ form|crispy }}
                     <a href="{% url 'identifiers' %}" class="btn btn-outline-black rounded-0 text-uppercase float-left">                    
