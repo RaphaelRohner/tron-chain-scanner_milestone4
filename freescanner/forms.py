@@ -2,7 +2,10 @@ from django import forms
 from .models import Identifiers
 
 
-class FreescannerForm(forms.ModelForm):
+# class FreescannerForm(forms.ModelForm):
+
+
+class IdentifiersForm(forms.ModelForm):
 
     class Meta:
         model = Identifiers

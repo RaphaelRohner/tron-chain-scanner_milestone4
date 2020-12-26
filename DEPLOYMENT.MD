@@ -440,7 +440,7 @@
 
 # 25/12/2020
 
-  - #193 Renamed and freescanner and walletscanner pages and adjusted urls and button layout to match.
+  - #193 Renamed freescanner and walletscanner pages and adjusted urls and button layout to match.
 
   - #194 Added functionality to edit Tron identifiers and set the identifier to be a unique value.
 
@@ -448,4 +448,6 @@
 
   - #196 Added basic confirmation request when deleting identifier or address.
 
-  - #196 
+# 26/12/2020
+
+  - #197 Renamed form to add and edit identifiers to IdentifierForm.

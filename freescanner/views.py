@@ -3,7 +3,7 @@ from django.contrib import messages
 import requests
 
 from .models import Identifiers
-from .forms import FreescannerForm
+from .forms import IdentifiersForm
 
 from tronapi import Tron
 from tronapi import HttpProvider
@@ -14,6 +14,7 @@ def freescanner(request):
     """
     A view to check if Tronlink wallet is available in the browser.
     """
+    get_contract()
 
     # url = "https://api.trongrid.io/v1/accounts/TTfoWGU2M939cgZm8CksPtz1ytJRM9GiN7"  # noqa: E501
 
@@ -36,7 +37,7 @@ def identifiers(request):
     identifiers = Identifiers.objects.all()  # pylint: disable=maybe-no-member
 
     if request.method == 'POST':
-        form = FreescannerForm(request.POST)
+        form = IdentifiersForm(request.POST)
         if form.is_valid():
             form.save()
             messages.success(request, 'Identifier added successfully')
@@ -45,7 +46,7 @@ def identifiers(request):
         else:
             messages.error(request, 'Action failed. Please ensure the form is valid.')  # noqa: 501
     else:
-        form = FreescannerForm()
+        form = IdentifiersForm()
 
     template = 'freescanner/add_identifier.html/'
     context = {
@@ -65,7 +66,7 @@ def edit_identifier(request, item_id):
 
     # handle form submissions
     if request.method == 'POST':
-        form = FreescannerForm(request.POST, request.FILES, instance=identifier)  # noqa: E501
+        form = IdentifiersForm(request.POST, request.FILES, instance=identifier)  # noqa: E501
         if form.is_valid():
             form.save()
             messages.success(request, 'Successfully updated identifier!')
@@ -74,7 +75,7 @@ def edit_identifier(request, item_id):
         else:
             messages.error(request, 'Failed to update identifier. Please ensure the form is valid.')  # noqa: E501
     else:
-        form = FreescannerForm(instance=identifier)
+        form = IdentifiersForm(instance=identifier)
         messages.info(request, f'You are editing {identifier.identifier_name}')  # noqa: E501
 
     # render the template
@@ -98,6 +99,7 @@ def delete_identifier(request, item_id):
     return response
 
 
+# ACCESS TRON API
 full_node = HttpProvider('https://api.trongrid.io')
 solidity_node = HttpProvider('https://api.trongrid.io')
 event_server = HttpProvider('https://api.trongrid.io')
@@ -147,13 +149,11 @@ def get_contract():
 
     contract = tron.address.to_hex('TLa2f6VPqDgRE67v1736s7bJ8Ray5wYjU7')  # noqa: E501 WINK
 
-    print(contract)
-
     url = "https://api.trongrid.io/v1/contracts/{}/transactions".format(contract)  # noqa: E501
 
     response = requests.request("GET", url)
 
-    print(response.text)
+    return response
 
 
 def get_token_balances():
