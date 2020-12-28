@@ -24,7 +24,7 @@
         </div>
         <div class="row">
             <div class="col-6">
-
+                <h2 class="logo-font">Top 20 Win Holders:</h2>
             </div>
             
             <div class="col-6">               
@@ -33,6 +33,33 @@
                 </a> 
             </div>
         </div>
-        <hr class="w-90 mb-1">    
+        <hr class="w-90 mb-1">
+        <div class="row">
+            <div class="col-12 col-lg-6">
+                <table class="table table-sm table-borderless">
+                    <thead>
+                        <tr>
+                            <th>Address:</th>
+                            <th>Balance:</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Thanks to https://www.gun.io/blog/how-to-list-items-in-a-dictionary-in-a-django-template -->
+                        {% for key, value in token_balance.items %}
+                            {% if key == 'data' %}
+                                {% for item in value %}
+                                    {% for wallet, ballance in item.items %}
+                                        <tr>
+                                            <th>{{ wallet }}</th>
+                                            <th>{{ ballance }}</th>
+                                        </tr>
+                                    {% endfor %}
+                                {% endfor %}
+                            {% endif %}
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+        </div>   
     </div>
 {% endblock %}

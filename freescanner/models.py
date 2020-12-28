@@ -20,7 +20,7 @@ class Identifiers(models.Model):
         verbose_name_plural = 'Identifiers'
 
     identifier_contract = models.CharField(max_length=40, null=False, blank=False, unique=True)  # noqa: E501
-    identifier_name = models.CharField(max_length=50, null=False, blank=False)
+    identifier_name = models.CharField(max_length=50, null=False, blank=False, unique=True)  # noqa: E501
     # e.g. contract, token, address
     identifier_type = models.CharField(max_length=100, null=False, blank=False, choices=CHOICES)  # noqa: E501
     identifier_comment = models.CharField(max_length=250, null=False, blank=False)  # noqa: E501

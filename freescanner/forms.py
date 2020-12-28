@@ -2,7 +2,8 @@ from django import forms
 from .models import Identifiers
 
 
-# class FreescannerForm(forms.ModelForm):
+class FreescannerSelectField(forms.Form):
+    identifierSelect = forms.ModelChoiceField(queryset=Identifiers.objects.values_list('identifier_name', flat=True), empty_label=None)  # noqa: E501, pylint: disable=maybe-no-member
 
 
 class IdentifiersForm(forms.ModelForm):

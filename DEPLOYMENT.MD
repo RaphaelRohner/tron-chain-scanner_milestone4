@@ -451,3 +451,7 @@
 # 26/12/2020
 
   - #197 Renamed form to add and edit identifiers to IdentifierForm.
+
+# 28/12/2020
+
+  - #198 Added Freescanner Top 20 Win holders functionality and cleaned up the app's views.py.

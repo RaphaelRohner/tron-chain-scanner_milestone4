@@ -3,7 +3,7 @@ from django.contrib import messages
 import requests
 
 from .models import Identifiers
-from .forms import IdentifiersForm
+from .forms import IdentifiersForm, FreescannerSelectField
 
 from tronapi import Tron
 from tronapi import HttpProvider
@@ -14,17 +14,20 @@ def freescanner(request):
     """
     A view to check if Tronlink wallet is available in the browser.
     """
-    get_contract()
+    # Asign the JSON response to a variable
+    token_balance = get_token_balances()
 
-    # url = "https://api.trongrid.io/v1/accounts/TTfoWGU2M939cgZm8CksPtz1ytJRM9GiN7"  # noqa: E501
+    # Include drop-down field values
+    dropdown_identifiers = FreescannerSelectField()
 
-    # response = requests.request("GET", url)
-
-    # print(response.text)
-
+    # Open this template
     template = 'freescanner/freescanner.html/'
 
-    context = {}
+    # Include the dropdown values and the API response
+    context = {
+        'dropdown_identifiers': dropdown_identifiers,
+        'token_balance': token_balance,
+    }
 
     return render(request, template, context)
 
@@ -55,6 +58,9 @@ def identifiers(request):
     }
 
     return render(request, template, context)
+
+
+# ---------------- DB CRUD OPERATIONS --------------------
 
 
 def edit_identifier(request, item_id):
@@ -91,12 +97,15 @@ def edit_identifier(request, item_id):
 
 
 def delete_identifier(request, item_id):
+    """ A view to delete the selected identifier stored from the database """
     identifier = get_object_or_404(Identifiers, pk=item_id)
 
     identifier.delete()
     messages.success(request, 'Identifier deleted!')
     response = redirect('/freescanner/add/')
     return response
+
+# ---------------- IMPLEMENTED TRON API REQUESTS --------------------
 
 
 # ACCESS TRON API
@@ -108,9 +117,29 @@ tron = Tron(full_node=full_node,
             event_server=event_server)
 
 
+# TRON API OPTION VIA CONTRACTS
+def get_token_balances():
+    """ A view to receive the top 20 token holders of the WINK WIN contract """
+
+    contract = tron.address.to_hex('TLa2f6VPqDgRE67v1736s7bJ8Ray5wYjU7')  # noqa: E501 - Target: WINK contract
+
+    url = "https://api.trongrid.io/v1/contracts/{}/tokens".format(contract)  # noqa: E501
+
+    response = requests.request("GET", url)
+
+    print(response.text)
+
+    response_json = response.json()
+
+    return response_json
+
+
+# ---------------- NOT YET IMPLEMENTED TRON API REQUESTS --------------------
+
+
 # TRON API OPTIONS FOR TRC10 TOKENS
 def get_trc10_tokens():
-    """ A view to receive all trc10 tokens """
+    """ Not yet implemented view to receive all trc10 tokens """
 
     url = "https://api.trongrid.io/v1/assets"
 
@@ -120,7 +149,7 @@ def get_trc10_tokens():
 
 
 def get_token_by_name():
-    """ A view to receive all trc10 tokens """
+    """ Not yet implemented view to receive all trc10 tokens """
 
     token = "DIGIKEY"
 
@@ -132,7 +161,7 @@ def get_token_by_name():
 
 
 def get_token_by_id():
-    """ A view to receive a trc10 token by its ID """
+    """ Not yet implemented view to receive a trc10 token by its ID """
 
     identifier = "1003563"  # DIGIKEY
 
@@ -145,34 +174,22 @@ def get_token_by_id():
 
 # TRON API OPTIONS VIA CONTRACTS
 def get_contract():
-    """ A view to receive a contract by its ID """
+    """ Not yet implemented view to receive a contract by its ID """
 
-    contract = tron.address.to_hex('TLa2f6VPqDgRE67v1736s7bJ8Ray5wYjU7')  # noqa: E501 WINK
+    contract = tron.address.to_hex('TLa2f6VPqDgRE67v1736s7bJ8Ray5wYjU7')  # noqa: E501 - WINK TRC20 contract
 
     url = "https://api.trongrid.io/v1/contracts/{}/transactions".format(contract)  # noqa: E501
 
     response = requests.request("GET", url)
 
+    print(response)
+
     return response
-
-
-def get_token_balances():
-    """ A view to receive the token balance of a contract """
-
-    contract = tron.address.to_hex('TLa2f6VPqDgRE67v1736s7bJ8Ray5wYjU7')  # noqa: E501 WINK
-
-    print(contract)
-
-    url = "https://api.trongrid.io/v1/contracts/{}/tokens".format(contract)  # noqa: E501
-
-    response = requests.request("GET", url)
-
-    print(response.text)
 
 
 # TRON API OPTIONS VIA EVENTS
 def get_event_by_id():
-    """ A view to receive an event by its ID """
+    """ Not yet implemented view to receive an event by its ID """
 
     event = "74684615f1f09e334ea2ca806f0dc74c1053ff237435165c87a1f22e86dc0697"  # noqa: E501
 
@@ -186,7 +203,7 @@ def get_event_by_id():
 
 
 def get_events_by_contract():
-    """ A view to receive events by of a contract """
+    """ Not yet implemented view to receive events by of a contract """
 
     contract = "TE3L3rqrPrYh59FpvYPAHg6YpMR7qCpJ9m"
 
@@ -200,7 +217,7 @@ def get_events_by_contract():
 
 
 def get_events_by_block():
-    """ A view to receive events of a block """
+    """ Not yet implemented view to receive events of a block """
 
     block = "26068354"
 
@@ -214,7 +231,7 @@ def get_events_by_block():
 
 
 def get_latest_block_events():
-    """ A view to receive the latest block events """
+    """ Not yet implemented view to receive the latest block events """
 
     url = "https://api.trongrid.io/v1/blocks/latest/events"
 
