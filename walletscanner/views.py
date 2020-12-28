@@ -1,47 +1,14 @@
 from django.shortcuts import render
-from django.contrib import messages
 import requests
-
-from .models import Wallet
-from .forms import WalletForm
 
 
 # Create your views here.
 def wallet_scanner(request):
     """ A view to check if Tronlink wallet is available in the browser. """
 
-    userwallet = request.POST.get('tronlink')
-    print(userwallet)
-
     context = {}
 
     return render(request, 'walletscanner/walletscanner.html', context)
-
-
-def mwallet(request):
-    """
-    A view to add a main wallet.
-    """
-
-    wallet = Wallet.objects.all()  # pylint: disable=maybe-no-member
-
-    if request.method == 'POST':
-        form = WalletForm(request.POST)
-        if form.is_valid():
-            form.save()
-            messages.success(request, 'Wallet added successfully')
-        else:
-            messages.error(request, 'Action failed. Please ensure the form is valid.')  # noqa: 501
-    else:
-        form = WalletForm()
-
-    template = 'walletscanner/primary_wallet.html'
-    context = {
-        'form': form,
-        'wallet': wallet,
-    }
-
-    return render(request, template, context)
 
 
 # TRON API OPTIONS VIA ACCOUNT

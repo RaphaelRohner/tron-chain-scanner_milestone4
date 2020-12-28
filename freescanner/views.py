@@ -68,7 +68,6 @@ def edit_identifier(request, item_id):
 
     # get the clicked identifier belonging to the link clicked
     identifier = get_object_or_404(Identifiers, pk=item_id)
-    print(identifier.id, identifier.identifier_name)
 
     # handle form submissions
     if request.method == 'POST':
@@ -90,8 +89,6 @@ def edit_identifier(request, item_id):
         'form': form,
         'identifier': identifier,
     }
-
-    print(context)
 
     return render(request, template, context)
 
@@ -126,8 +123,6 @@ def get_token_balances():
     url = "https://api.trongrid.io/v1/contracts/{}/tokens".format(contract)  # noqa: E501
 
     response = requests.request("GET", url)
-
-    print(response.text)
 
     response_json = response.json()
 
