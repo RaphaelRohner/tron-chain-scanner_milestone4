@@ -13,7 +13,10 @@ def wallet_scanner(request):
 
 # TRON API OPTIONS VIA ACCOUNT
 def get_account():
-    """ A view to receive infos for a specific wallet address """
+    """
+    Not yet implemented view to receive
+    infos for a specific wallet address
+    """
 
     wallet = "TTfoWGU2M939cgZm8CksPtz1ytJRM9GiN7"
 
@@ -27,7 +30,10 @@ def get_account():
 
 
 def get_transactions():
-    """ A view to receive transactions of a specific wallet address """
+    """
+    Not yet implemented view to receive
+    transactions of a specific wallet address
+    """
 
     wallet = "TTfoWGU2M939cgZm8CksPtz1ytJRM9GiN7"
 
@@ -39,7 +45,10 @@ def get_transactions():
 
 
 def get_transactions_trc20():
-    """ A view to receive trc20 transactions of a specific wallet address """
+    """
+    Not yet implemented view to receive trc20
+    transactions of a specific wallet address
+    """
 
     wallet = "TTfoWGU2M939cgZm8CksPtz1ytJRM9GiN7"
 

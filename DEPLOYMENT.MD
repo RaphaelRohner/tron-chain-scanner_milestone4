@@ -456,4 +456,8 @@
 
   - #198 Added Freescanner Top 20 Win holders functionality and cleaned up the app's views.py.
 
-  - #199 Fixed Tronlink connection to donate 1 TRX without trying to create a wallet. 
+  - #199 Fixed Tronlink connection to donate 1 TRX without trying to create a wallet.
+
+# 29/12/2020
+
+  - #200 Updated README.MD.

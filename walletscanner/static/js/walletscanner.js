@@ -25,7 +25,6 @@ function paymentTronlink(){
             var tx = await tronweb.transactionBuilder.sendTrx('TWFEaFsLiC7EDfgCqjnZKx8gbfNiZftPwT', 1000000, current_wallet)
             var signedTx = await tronweb.trx.sign(tx)
             var broastTx = await tronweb.trx.sendRawTransaction(signedTx)
-            console.log(broastTx)
         }
     }, 10)
 }
