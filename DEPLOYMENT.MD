@@ -461,3 +461,7 @@
 # 29/12/2020
 
   - #200 Updated README.MD.
+
+# 30/12/2020
+
+  - #201 Updated README.MD and added Tron Logo for smaller screen sizes.

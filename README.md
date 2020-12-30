@@ -292,8 +292,8 @@ They are still in this file as a guideline for future developments and allow an 
 * javaScript - for site functionality and to access Tronlink
 * jQuery 3.4.1.min - to build the search function and reduce coding
 * Bootstrap 4.5.3.min - to style the site and make it responsive
-* FontAwesome - to get all those lovely icons
-* Google Fonts - to use Lato
+* FontAwesome - to get all the icons
+* Google Fonts - to use Lato font
 * Django 3.1.3 - to create the projects app structure
 * Django Allauth - to create user login system
 * Django Toasts - to create messages on the website
@@ -307,7 +307,6 @@ They are still in this file as a guideline for future developments and allow an 
 
 # Testing
 
-HTML5 code is tested using GitPod built-in functionality.\
 All CSS3 code is tested via the W3C CSS Validation Service.\
 The website displays as expected on all devices and browsers used.\
 All Python3 and Django code was tested manually.
@@ -332,14 +331,31 @@ Navigation and responsive design was tested on:
 
 # Deployment
 
+The project is deployed on GitHub and Heroku and accessible via the following links:
 
+GitHub: https://github.com/RaphaelRohner/tron-chain-scanner_milestone4
+
+Heroku: https://tron-chain-scanner.herokuapp.com/
+
+Static content is hosted with AWS.
+
+All current secret keys are stored in environment variables and were not deployed at any point.
 
 # Credits
 
 ## Content
+  * Tron blockchain info comes from the Tron blockchain.
 
 ## Media
+  * The basic vector graphics for the products come from: https://www.freepik.com/
+  * The Tron logo comes from the Tron Foundation: https://tron.guide/resources/tron-logo-kit/
 
 ## Code
+  * The project is heavily based on Codeinstitute's Boutique Ado walkthrough project.
+  * The code to access the Tron API comes from the Tron Foundation.  * 
 
 ## Acknowledgements
+  * Many thanks to Codeinstitute for providing this course and especially the Boutique Ado project.
+  * Thank you to all the tutors of Codeinstitute for providing the amazing support they offer.
+  * A massive thank you to Aaron my mentor from Codeinstitute for all the support.
+  * And big thumbs up to everyone @Slack, w3schools and stackoverflow. Without your answers to other problems, I wouldn't have figured out the solutions to mine!

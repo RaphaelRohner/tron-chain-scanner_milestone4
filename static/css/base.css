@@ -340,3 +340,10 @@ input[name='q']::placeholder {
     }
 }
 
+@media (max-width: 980px) {
+    /* pad the top when navbar is collapsed on mobile */
+    body {
+        background: url('/media/icon-red-cropped300.png') no-repeat center center fixed;
+        background-size: contain;
+    }
+}
