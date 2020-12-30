@@ -46,11 +46,10 @@
                                 <th>Checkout with:</th>
                                 <th>Address: Street</th>
                                 <th>Address: Town or City</th>
-                                <th>Action:</th>
                             </tr>
                         </thead>
                         <tbody>
-                            {% for item in addresses %}                    
+                            {% for item in addresses %}
                                 <tr>
                                     <td>
                                         <a href="{% url 'checkoutadr' item.id %}" title="{{ item.additional_full_name }}">
@@ -59,15 +58,20 @@
                                     </td>
                                     <td>{{ item.additional_street_address1 }}</td>
                                     <td>{{ item.additional_town_or_city }}</td>
-                                    <td class="float-right">                                        
-                                        <a href="{% url 'edit_address' item.id %}" class="btn btn-outline-black rounded-0 text-uppercase">                    
+                                </tr>
+                                <tr>
+                                    <td>                                        
+                                        <a href="{% url 'edit_address' item.id %}" class="btn btn-outline-black rounded-0 text-uppercase float-left">                    
                                             <span class="font-weight-bold">Edit</span>
                                         </a>
+                                    </td>
+                                    <td></td>
+                                    <td>
                                         <a href="{% url 'delete_address' item.id %}" class="btn btn-black rounded-0 text-uppercase float-right" onclick="return confirm('Delete Address?');">                    
                                             <span class="font-weight-bold">Delete</span>
-                                        </a>
-                                    </td>                                    
-                                </tr>
+                                        </a>                                        
+                                    </td>
+                                </tr>                                
                             {% endfor %}
                         </tbody>
                     </table>

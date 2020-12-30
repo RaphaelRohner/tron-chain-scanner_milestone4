@@ -465,3 +465,5 @@
 # 30/12/2020
 
   - #201 Updated README.MD and added Tron Logo for smaller screen sizes.
+
+  - #202 Fixed mobile layout for user profile and addresses.
