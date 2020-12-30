@@ -467,3 +467,5 @@
   - #201 Updated README.MD and added Tron Logo for smaller screen sizes.
 
   - #202 Fixed mobile layout for user profile and addresses.
+
+  - #203 Fixed mobile layout for identifiers.

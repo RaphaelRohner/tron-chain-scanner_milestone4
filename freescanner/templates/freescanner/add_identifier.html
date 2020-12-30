@@ -29,11 +29,11 @@
                     {% csrf_token %}
                     {{ form|crispy }}
                     <a href="{% url 'freescanner' %}" class="btn btn-outline-black rounded-0 text-uppercase float-left">                    
-                        <span class="font-weight-bold">Back to Free scanner</span>
+                        <span class="font-weight-bold">Free scanner</span>
                     </a>
                     <button class="btn btn-black rounded-0 text-uppercase float-right">Add Identifier</button>
                 </form>
-            </div>        
+            </div>       
             <div class="col-12 col-lg-6">
                 <p class="text-muted">Defined Identifiers</p>
                 <div class="order-history table-responsive">
@@ -42,7 +42,6 @@
                             <tr>
                                 <th>Name:</th>
                                 <th>Type:</th>
-                                <th class="float-left; text-align: center">Action:</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -50,10 +49,14 @@
                                 <tr>
                                     <td>{{ item.identifier_name }}</td>
                                     <td>{{ item.identifier_type }}</td>
-                                    <td class="float-right">                                        
-                                        <a href="{% url 'edit_identifier' item.id %}" class="btn btn-outline-black rounded-0 text-uppercase">                    
+                                </tr>
+                                <tr>
+                                    <td>                                        
+                                        <a href="{% url 'edit_identifier' item.id %}" class="btn btn-outline-black rounded-0 text-uppercase float-left">                    
                                             <span class="font-weight-bold">Edit</span>
                                         </a>
+                                    </td>
+                                    <td>
                                         <a href="{% url 'delete_identifier' item.id %}" class="btn btn-black rounded-0 text-uppercase float-right" onclick="return confirm('Delete identifier?');">                    
                                             <span class="font-weight-bold">Delete</span>
                                         </a>
