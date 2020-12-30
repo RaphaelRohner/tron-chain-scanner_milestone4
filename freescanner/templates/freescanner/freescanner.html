@@ -36,29 +36,18 @@
         <hr class="w-90 mb-1">
         <div class="row">
             <div class="col-12 col-lg-6">
-                <table class="table table-sm table-borderless">
-                    <thead>
-                        <tr>
-                            <th>TRX Wallet:</th>
-                            <th>Balance:</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <!-- Thanks to https://www.gun.io/blog/how-to-list-items-in-a-dictionary-in-a-django-template -->
-                        {% for key, value in token_balance.items %}
-                            {% if key == 'data' %}
-                                {% for item in value %}
-                                    {% for wallet, ballance in item.items %}
-                                        <tr>
-                                            <th>{{ wallet }}</th>
-                                            <th>{{ ballance }}</th>
-                                        </tr>
-                                    {% endfor %}
-                                {% endfor %}
-                            {% endif %}
+                <!-- Thanks to https://www.gun.io/blog/how-to-list-items-in-a-dictionary-in-a-django-template -->
+                {% for key, value in token_balance.items %}
+                    {% if key == 'data' %}
+                        {% for item in value %}
+                            {% for wallet, ballance in item.items %}
+                                <p>{{ wallet }}</p>
+                                <p>Balance: {{ ballance }}</p>
+                                <p>-------------------------------------------------------</p>
+                            {% endfor %}
                         {% endfor %}
-                    </tbody>
-                </table>
+                    {% endif %}
+                {% endfor %}
             </div>
         </div>   
     </div>

@@ -469,3 +469,5 @@
   - #202 Fixed mobile layout for user profile and addresses.
 
   - #203 Fixed mobile layout for identifiers.
+
+  - #204 Adjusted freescanner layout to mobile devices.
