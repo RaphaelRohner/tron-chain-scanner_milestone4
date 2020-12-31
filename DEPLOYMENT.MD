@@ -471,3 +471,5 @@
   - #203 Fixed mobile layout for identifiers.
 
   - #204 Adjusted freescanner layout to mobile devices.
+  
+  - #205 Adjusted header padding to avoid body headlines being cut off.

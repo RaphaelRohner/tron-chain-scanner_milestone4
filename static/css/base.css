@@ -288,6 +288,12 @@ input[name='q']::placeholder {
     }
 
     .header-container {
+        padding-top: 204px;
+    }
+}
+
+@media (min-width: 1255px) {
+    .header-container {
         padding-top: 164px;
     }
 }
